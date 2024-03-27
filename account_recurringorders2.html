@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account_recurringorders2</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/loccitane.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel">
+        <div>
+            <p>MY BAG_</p>
+            <input type="button" value="close" class="closeButton">
+        </div>
+        <form action="mybag1.html" id="productin">
+            <div>
+                <div>
+                    <img src="images/cart_product.png" alt="cart_product">
+                </div>
+                <div>
+                    <b>Almond Delicious Hands</b>
+                    <small>Volume 1 oz</small>
+                    <div>
+                        <input type="button" class="minus" value="mi">
+                        <input type="text" value="1" id="counter">
+                        <input type="button" class="plus" value="pl"> 
+                    </div>
+                    <div>
+                        <strong>$13.00</strong>
+                        <input type="button" value="Remove" class="reMove">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Subtotal</p>
+                <strong>$13.00</strong>
+            </div>
+            <input type="submit" value="Checkout">
+        </form>
+        <div class="cartpanelEmpty">
+            <span>Your Bag is Empty</span>
+        </div>
+    </div>
+   <header>
+        <div>
+            <nav>
+                <div>
+                    <input type="button" class="menuopenbt" value="open">
+                    <div class="menupanel">
+                        <input type="button" class="menuclosebt" value="close">
+                        <ul>
+                            <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                            <li><a href="list_new.html">NEW & BEST</a></li>
+                            <li>
+                                <span>various CARE</span>
+                                <ol>
+                                    <li><a href="list_Skincare.html">Skincare</a></li>
+                                    <li><a href="list_HandCare.html">Hand Care</a></li>
+                                    <li>
+                                        <span>Body Care</span>
+                                        <ul>
+                                            <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                            <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                            <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                            <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                            <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="list_HairCare.html">Hair Care</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                            <li><a href="signIn.html">ACCOUNT</a></li>
+                            <li><a href="helpMainpage.html">HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                    <li><a href="list_new.html">NEW &amp; BEST</a></li>
+                    <li data-hover="hoverMenu">
+                        <span>various CARE</span>
+                        <ol>
+                            <li><a href="list_Skincare.html">Skincare</a></li>
+                            <li><a href="list_HandCare.html">Hand Care</a></li>
+                            <li>
+                                <span>Body Care</span>
+                                <ul>
+                                    <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                    <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                    <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                    <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                    <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="list_HairCare.html">Hair Care</a></li>
+                            <li><img src="images/gnb.png" alt="productimages"></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="welcome to loccitane"></a>
+                </h1>
+                <ul>
+                    <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                    <li><a href="signIn.html">ACCOUNT</a></li>
+                    <li><a href="helpMainpage.html">HELP</a></li>
+                    <li>
+                        <input type="button" value="cartButton" class="cartButton" data-panel="cartPanel">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="accountrecurringorders2">
+        <div>
+            <h2>my account_</h2>
+            <div>
+                <strong>MY RECURRING ORDERS</strong>
+            </div>
+            <aside>
+                <h3>my profile</h3>
+                <nav>
+                    <ol>
+                        <li><a href="account_information.html">ACCOUNT INFORMATION</a></li>
+                        <li><a href="account_payment.html">PAYMENT INFORMATION</a></li>
+                        <li><a href="account_address.html">ADDRESS</a></li>
+                        <li><a href="account_changepassword.html">CHANGE PASSWORD</a></li>
+                    </ol>
+                </nav>
+            </aside>
+            <aside>
+                <h3>my orders</h3>
+                <nav>
+                    <ol>
+                        <li><a href="account_history.html">MY ORDER HISTORY</a></li>
+                        <li>MY RECURRING ORDERS</li>
+                    </ol>
+                </nav>
+            </aside>
+        </div>
+        <div>
+            <strong>Auto-Replenishment Terms and Frequently Asked Questions</strong>
+            <div>
+                <p>Effective Date: November 19, 2018</p>
+                <p>As of the above Effective Date, L’Occitane, Inc. (“L’Occitane” or “we”) has updated the terms of its Auto-Replenishment 
+                    subscription program to provide more specific information about the program details.  Please contact us with any additional 
+                    questions you may have.</p>
+            </div>
+            <div>
+                <b>What is Auto-Replenishment by L’Occitane?</b>
+                <p>Auto-Replenishment is the most convenient way for you to get the products you want delivered to you on a regular schedule. We automatically 
+                    send your favorite products based upon your chosen frequency. The service is easy to use and customizable, so you can make changes online 
+                    whenever you need. Just tell us how often you want your products, and we'll take it from there! Plus, receive 10% off and FREE shipping + samples 
+                    on all Auto-Replenishment orders.</p>
+                <p>You have complete control over your Auto-Replenishment orders, and we will send you an email reminder 10 days before each order ships. You 
+                    can change your delivery frequency, next order date or quantity any time by visiting ‘My Recurring Orders’ located within your account. Changes 
+                    to orders can be made up to 24 hours before the next scheduled shipment date.   You can cancel at any time online or by phone. Enjoy the 
+                    flexibility, convenience and savings of Auto-Replenishment and never worry about running out of your favorites again!
+                </p>
+            </div>
+            <div>
+                <b>How do I join Auto-Replenishment by L’Occitane?</b>
+                <p>Joining Auto-Replenishment is easy! You can do so while browsing on a product page or while reviewing items in the shopping cart.</p>
+                <span>To get started:</span>
+                <ol>
+                    <li>1. Select the Auto-Replenishment option for your desired product.</li>
+                    <li>2. Choose your preferred shipment frequency from the dropdown menu.</li>
+                    <li>2. Click ADD TO CART and check out as usual.</li>
+                </ol>
+            </div>
+            <div>
+                <b>What will happen after I join Auto-Replenishment by L’Occitane?</b>
+                <p>After you join Auto-Replenishment, you will receive an email confirming your subscription. This email will include a link to access the 
+                    “My Recurring Orders” section in your L’Occitane online account where you can manage your future orders, subscription items and account 
+                    information.</p>
+                <p>We will place your Auto-Replenishment orders automatically according to your selected frequency, and you will only be billed on the day the 
+                    order is shipped. We will send you an email reminder 10 days before each order ships, and you can change or cancel your order up to 24 hours 
+                    before the shipment date. You also will receive email notifications regarding other important transactional information related to your Auto-
+                    Replenishment account, such as if your item is discontinued or out of stock, if you cancel a shipment and confirmation when an order is placed 
+                    successfully.</p>
+            </div>
+            <div>
+                <b>How do I make changes to my Auto-Replenishment orders?</b>
+                <p>Once you’ve joined, Auto-Replenishment is easy to manage. You can change your next order date, skip an order, change your selected frequency or
+                    cancel an Auto-Replenishment order by visiting the ”My Recurring Orders” section in your L’Occitane online account. Please allow up to 24 hours 
+                    for modifications or cancellations to be processed.</p>
+                <span>Change an order date:</span>
+                <ol>
+                    <li>1. Visit the “My Recurring Orders” section within your account.</li>
+                    <li>2. Click the “Edit Order” button to the right of the next shipment date.</li>
+                    <li>3. Select a new date for your order. This will change the order date for the entire Auto-Replenishment order.</li>
+                </ol>
+                <span>Skip a delivery:</span>
+                <ol>
+                    <li>1. Visit the “My Recurring Orders” section within your account.</li>
+                    <li>2. Click the “Skip Delivery” button to the right of the upcoming order date to skip the entire order.</li>
+                </ol>
+                <span>Change delivery frequency:</span>
+                <ol>
+                    <li>1. Visit the “My Recurring Orders” section within your account.</li>
+                    <li>2. The current delivery frequency is displayed next to each replenishment item in a dropdown menu next to “Every”. To change the delivery 
+                        frequency for an individual item, simply click the frequency dropdown menu next to the item you would like to modify and select your desired 
+                        frequency from the available options.</li>
+                </ol>
+                <span>Send an order now:</span>
+                <ol>
+                    <li>1. Visit the “My Recurring Orders” section within your account.</li>
+                    <li>2. Click the “Send Now” button to the right of the upcoming order date to send the entire order.</li>
+                </ol>
+                <span>Cancel an Auto-Replenishment item:</span>
+                <ol>
+                    <li>1. To cancel an Auto-Replenishment item, visit the “My Recurring Orders” section within your account.</li>
+                    <li>2. Click the “Cancel” link to the right of the item you wish to cancel.</li>
+                    <li>3. You’ll be prompted to confirm this action and indicate your reason for cancelling. Once you’ve selected a cancellation reason and clicked the 
+                        “Stop Replenishment” button, your Auto-Replenishment subscription for that item will be cancelled and no future orders will be placed, provided 
+                        the cancellation was requested at least 24 hours prior to the scheduled shipment date.</li>
+                    <li>4. You will receive an email notification confirming the cancellation. Please allow up to 24 hours for any modifications or cancellations to be 
+                        processed.</li>
+                </ol>
+                <span>Pause an Auto-Replenishment item:</span>
+                <ol>
+                    <li>1. To pause an Auto-Replenishment item, visit the ”My Recurring Orders” section within your account.</li>
+                    <li>2. Click the “Pause” link to the right of the item you wish to pause.</li>
+                    <li>3. You’ll be prompted to select a shipment resume date. Once you’ve selected the date and clicked the “Pause Subscription” button, your 
+                        replenishment will be paused and will resume shipment on the date that you selected.</li>
+                </ol>
+            </div>
+            <div>
+                <b>How do I make changes to my Auto-Replenishment account information?</b>
+                <p>To review or modify your Auto-Replenishment account information, visit the ”My Recurring Orders” section located within your account.</p>
+                <span>Shipping address changes:</span>
+                <ol>
+                    <li>1. To change your shipping address for an order, click the “Edit” link located directly next to the current shipping information.</li>
+                    <li>2. Select a prior shipping address from the dropdown menu or create a new one to add to your account. Unless you indicate otherwise, this shipping 
+                        address will apply to all Auto-Replenishment and future orders thereafter.</li>
+                </ol>
+                <span>Billing address changes:</span>
+                <p>1. To change your billing address for an order, click the “Edit” link located directly next to the current billing information.
+                    This will open a new page where you can add new payment information. Unless you indicate otherwise, this billing information will apply to all 
+                    Auto-Replenishment and future orders thereafter.</p>
+                <p>Please remember to press OK and verify that your updated information saved successfully. We kindly ask that you allow up to 24 hours for 
+                    modifications or cancellations to be processed.</p>
+            </div>
+            <div>
+                <b>How do I view my future deliveries?</b>
+                <p>Your very next scheduled orders will be listed in the “My Recurring Orders” section of your L’Occitane online account under the 
+                    “Upcoming Orders” option.</p>
+                <b>How do I combine items to be in the same order?</b>
+                <p>Auto-Replenishment items that have the same order date, shipping address, billing address and payment method will ship as one order. If you 
+                    have more than one Auto-Replenishment item and want the items to ship in the same order, simply visit the “My Recurring Orders” section of your 
+                    account and select the same next-order dates for the items you want shipped together. Also, confirm the orders are going to the same shipping 
+                    address and have the same billing address and payment method.</p>
+                <b>Can I add items to my next order with an existing Auto-Replenishment order?</b>
+                <p>Yes, you can! To do so, you must be logged into your account. Visit the online page of the item you wish to add to your order, and find the 
+                    “Add this to my order on:” button. When you click this button, you will have the option to add the item as a one-time only order, or if the product is 
+                    eligible, as an Auto-Replenishment item.</p>
+                <b>What types of payments are accepted for Auto-Replenishment?</b>
+                <p>All Auto-Replenishment orders require a credit or debit card payment. Alternative payment forms, such as PayPal, cannot be accepted.</p>
+                <b>What will happen if an item in my Auto-Replenishment order is on sale?</b>
+                <p>If a product is on sale when you add it to your Auto-Replenishment order, you will receive the sale price for that initial order. All subsequent 
+                    orders will be shipped at the price displayed at the time of each subsequent order. Promotional pricing is valid only during the timeframes 
+                    advertised on the L’Occitane website.</p>
+                <b>How will I know if an item in my Auto-Replenishment subscription has been discontinued?</b>
+                <p>If an item in your Auto-Replenishment order becomes discontinued, we will send you an email notifying you that the item has been removed from 
+                    your account and your subscription for that item will be cancelled</p>
+                <small>***************************************************************************************************************<span>***************************</span></small>
+            </div>
+            <div>
+                <b>Auto-Replenishment Terms</b>
+                <p>By placing this order, you agree to the terms and conditions for the Auto-Replenishment program and authorize us to charge your card for future 
+                    orders at the frequency and quantity you selected. Auto-Replenishment items will ship automatically until you cancel. The actual cost of each 
+                    order may vary depending on the prices and promotions then in effect, quantity, and frequency of shipment. For customer service or to cancel, 
+                    login to your L’Occitane online account, email contact.en-us@loccitane.com or call 888-623-2880.</p>
+            </div>
+        </div>
+    </div>
+  <footer>
+        <div>
+            <ul>
+                <li>
+                    <strong>Safe &amp; Secure Payment</strong>
+                    <p>Our online payment system is operated 
+                        by a service provider specializing in secure 
+                        online payments.<span>For further information 
+                            please refer to the "payment" section of 
+                            our Terms and Conditions.</span></p>
+                </li>
+                <li>
+                    <strong>SHIPPING</strong>
+                    <p>Free standard shipping on all orders of $49+ 3 - 10 
+                        business days from receipt of your order. 
+                        <span>For an additional charge per address, 
+                            we can expedite delivery by FedEx to most 
+                            destinations in 2 - 3 business days.</span></p>
+                </li>
+                <li>
+                    <strong>CUSTOMER SERVICE</strong>
+                    <p>Need Help? Please call:  1-888-623-2880
+                        Monday - Friday 9AM - 11PM EST
+                        Saturday 10AM - 11PM EST</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <img src="images/logo_10.png" alt="welcome_to_loccitane">
+            </div>
+            <div>
+                <h2 class="morebt1">ABOUT US</h2>
+                <ul class="moredata1">
+                    <li><a href="footer_Cultivators_of_Change.html">Cultivators of Change</a></li>
+                    <li><a href="footer_LOccitane_Values.html">L'Occitane Values</a></li>
+                    <li><a href="footer_Sustainable_Beauty.html">Sustainable Beauty</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">L'OCCITANE Group</a></li>
+                    <li><a href="footer_Formulation_Charter.html">Formulation Charter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt2">AT YOUR SERVICE</h2>
+                <ul class="moredata2">
+                    <li><a href="https://www.google.com" class="application">1-888-623-2880</a></li>
+                    <li><a href="helpMainpage.html">Help and Contact</a></li>
+                    <li><a href="signIn.html">Order Tracking</a></li>
+                    <li><a href="footer_ReturnExchanges.html">Return &amp; Exchanges</a></li>
+                    <li><a href="helpMainpage.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt3">SOCIAL MEDIA</h2>
+                <ul class="moredata3">
+                    <li><a href="https://www.facebook.com/loccitaneusa" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/loccitane/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/loccitaneusa" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Cd7XUlv4NPE" target="_blank">Youtube</a></li>
+                </ul>
+                <ul>
+                    <li><a href="footer_Do_Not_Sell_MyInfoRequest–California_Residents.html#donotsell">Do Not Sell My Info Request – 
+                        California Residents</a></li>
+                    <li><a href="footer_SupplyChain_Transparency.html">Supply Chain Transparency</a></li>
+                    <li><a href="footer_TermsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">Investors</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 L’OCCITANE INTERNATIONAL SA. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

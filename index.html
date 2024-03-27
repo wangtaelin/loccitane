@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'OCCITANE</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/loccitane.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel">
+        <div>
+            <p>MY BAG_</p>
+            <input type="button" value="close" class="closeButton">
+        </div>
+        <form action="mybag1.html" id="productin">
+            <div>
+                <div>
+                    <img src="images/cart_product.png" alt="cart_product">
+                </div>
+                <div>
+                    <b>Almond Delicious Hands</b>
+                    <small>Volume 1 oz</small>
+                    <div>
+                        <input type="button" class="minus" value="mi">
+                        <input type="text" value="1" id="counter">
+                        <input type="button" class="plus" value="pl"> 
+                    </div>
+                    <div>
+                        <strong>$13.00</strong>
+                        <input type="button" value="Remove" class="reMove">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Subtotal</p>
+                <strong>$13.00</strong>
+            </div>
+            <input type="submit" value="Checkout">
+        </form>
+        <div class="cartpanelEmpty">
+            <span>Your Bag is Empty</span>
+        </div>
+    </div>
+    <header>
+        <div>
+            <nav>
+                <div>
+                    <input type="button" class="menuopenbt" value="open">
+                    <div class="menupanel">
+                        <input type="button" class="menuclosebt" value="close">
+                        <ul>
+                            <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                            <li><a href="list_new.html">NEW & BEST</a></li>
+                            <li>
+                                <span>various CARE</span>
+                                <ol>
+                                    <li><a href="list_Skincare.html">Skincare</a></li>
+                                    <li><a href="list_HandCare.html">Hand Care</a></li>
+                                    <li>
+                                        <span>Body Care</span>
+                                        <ul>
+                                            <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                            <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                            <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                            <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                            <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="list_HairCare.html">Hair Care</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                            <li><a href="signIn.html">ACCOUNT</a></li>
+                            <li><a href="helpMainpage.html">HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                    <li><a href="list_new.html">NEW &amp; BEST</a></li>
+                    <li data-hover="hoverMenu">
+                        <span>various CARE</span>
+                        <ol>
+                            <li><a href="list_Skincare.html">Skincare</a></li>
+                            <li><a href="list_HandCare.html">Hand Care</a></li>
+                            <li>
+                                <span>Body Care</span>
+                                <ul>
+                                    <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                    <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                    <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                    <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                    <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="list_HairCare.html">Hair Care</a></li>
+                            <li><img src="images/gnb.png" alt="productimages"></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="welcome to loccitane"></a>
+                </h1>
+                <ul>
+                    <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                    <li><a href="signIn.html">ACCOUNT</a></li>
+                    <li><a href="helpMainpage.html">HELP</a></li>
+                    <li>
+                        <input type="button" value="cartButton" class="cartButton" data-panel="cartPanel">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="indexcontainer">
+        <div>
+            <div>
+                <img src="images/LOccitane-Project-header-hero-image.png" alt="LOccitane_mainimages">
+            </div>
+            <div>
+                <p>
+                    L’Occitane en Provence has always been, and will always be, deeply committed to consumer safety while limiting 
+                    environmental impact at every stage of the product’s life cycle. <span>We offer an exceptionally sensorial experience 
+                        through textures, fragrances, and rituals while making no compromises on the integrity of our products.</span>
+                </p>
+                <a href="footer_Formulation_Charter.html">Read the story</a>
+            </div>
+        </div>
+        <div>
+            <img src="images/mainpage_2_1.png" alt="lemon">
+            <div>
+                <ul>
+                    <li>
+                        <img src="images/mainpage_2_2.png" alt="milk">
+                    </li>
+                    <li>
+                        <img src="images/mainpage_2_3.png" alt="osmanthus">
+                    </li>
+                </ul>
+                <p>
+                    <b>Shea Butter</b> is an ideal beauty ingredient 
+                    which has been used for centuries by women 
+                    in Sub-saharan Africa to nourish and protect 
+                    their skin and hair.
+                </p>
+                <a href="list_Spread_the_Nourishment.html">Spread the Nourishment</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>a collection of more diverse products_</h2>
+                <ul>
+                    <li>
+                        <input type="button" value="New In" class="newinButton">
+                    </li>
+                    <li>
+                        <input type="button" value="Most-Loved Skincare" class="mostloveButton">
+                    </li>
+                    <li>
+                        <input type="button" value="Soften With Nature" class="natureButton">
+                    </li>
+                </ul>
+                <p>
+                    "We need to stay conscious of the state of emergency facing our 
+                    natural world and fight for it together. We want to continue 
+                    preserving and giving back to nature, so that nature can continue 
+                    giving back to us. So every year, we work even harder, across 
+                    every environment and ecosystem we touch,to support and 
+                    enable its regeneration.""We offer 20 weeks of fully paid parental 
+                    leave to primary and secondary caregivers. "Adrien, Group Chief 
+                    Sustainability Officer.
+                </p>
+            </div>
+            <div>
+                <ul class="newin">
+                    <li>
+                        <a href="detail_osmanthusShowerGel_2400_new.html">
+                            <img src="images/mainpagenewin1.png" alt="Osmanthus_Shower_Gel">
+                        </a>
+                        <span>New In</span>
+                        <h3>
+                            <a href="detail_osmanthusShowerGel_2400_new.html">Osmanthus Shower Gel</a>
+                        </h3>
+                        <p>Normal - 8.4 fl. oz</p>
+                        <p>$24.00</p>
+                        <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                    </li>
+                    <li>
+                        <a href="detail_osmanthusEaudeToilette_8000_new.html">
+                            <img src="images/mainpagenewin2.png" alt="Osmanthus_Eau_de_Toilette">
+                        </a>
+                        <span>New In</span>
+                        <h3>
+                            <a href="detail_osmanthusEaudeToilette_8000_new.html">Osmanthus Eau de Toilette</a>
+                        </h3>
+                        <p>Volume 2.5 fl. oz</p>
+                        <p>$80.00</p>
+                        <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                    </li>
+                    <li>
+                        <a href="detail_osmanthusBodyLotion_3200_new.html">
+                            <img src="images/mainpagenewin3.png" alt="Osmanthus_Body_Lotion">
+                        </a>
+                        <span>New In</span>
+                        <h3>
+                            <a href="detail_osmanthusBodyLotion_3200_new.html">Osmanthus Body Lotion</a>
+                        </h3>
+                        <p>Normal - 8.4 fl. oz</p>
+                        <p>$32.00</p>
+                        <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                    </li>
+                </ul>
+                <ul class="mostlove">
+                    <li>
+                        <a href="detail_immortelle_Divine_Cream_GiftsForAll.html">
+                            <img src="images/mainpagemostlovedskincare1.png" alt="ImmortelleDivineCream">
+                        </a>
+                        <h3>
+                            <a href="detail_immortelle_Divine_Cream_GiftsForAll.html">Immortelle Divine Cream</a>
+                        </h3>
+                        <p>Volume 1.7 oz</p>
+                        <p>$115.00</p>
+                        <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                    </li>
+                    <li>
+                        <a href="detail_immortelleDivineSerum_12000_GiftsForHer.html">
+                            <img src="images/mainpagemostlovedskincare2.png" alt="Immortelle Divine Serum">
+                        </a>
+                        <h3>
+                            <a href="detail_detail_immortelleDivineSerum_12000_GiftsForHer.html">Immortelle Divine Serum</a>
+                        </h3>
+                        <p>Volume 1.7 oz</p>
+                        <p>$120.00</p>
+                        <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                    </li>
+                    <li>
+                        <a href="detail_immortelle_Overnight_Reset_Oil-in-Serum_GiftsForAll.html">
+                            <img src="images/mainpagemostlovedskincare3.png" alt="ImmortelleOvernightResetOil-in-Serum">
+                        </a>
+                        <h3>
+                            <a href="detail_detail_immortelle_Overnight_Reset_Oil-in-Serum_GiftsForAll.html">Immortelle Overnight Reset Oil-in-Serum</a>
+                        </h3>
+                        <p>Normal - 1.6 fl. oz</p>
+                        <p>$92.00</p>
+                        <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                    </li>
+                </ul>
+                <ul class="nature">
+                    <li>
+                        <a href="detail_osmanthusShowerGel_2400_new.html">
+                            <img src="images/mainpagesoftenwithnature1.png" alt="AlmondDelightfulBodyMist">
+                        </a>
+                        <h3>
+                            <a href="detail_osmanthusShowerGel_2400_new.html">Almond Delightful Body Mist</a>
+                        </h3>
+                        <p>Normal - 3.3 fl. oz</p>
+                        <p>$36.00</p>
+                        <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                    </li>
+                    <li>
+                        <a href="detail_osmanthusEaudeToilette_8000_new.html">
+                            <img src="images/mainpagesoftenwithnature2.png" alt="AlmondMilkyBath">
+                        </a>
+                        <h3>
+                            <a href="detail_osmanthusEaudeToilette_8000_new.html">Almond Milky Bath</a>
+                        </h3>
+                        <p>Volume 16.9 fl. oz</p>
+                        <p>$42.00</p>
+                        <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                    </li>
+                    <li>
+                        <a href="detail_osmanthusBodyLotion_3200_new.html">
+                            <img src="images/mainpagesoftenwithnature1.png" alt="AlmondMilkVeil">
+                        </a>
+                        <h3>
+                            <a href="detail_osmanthusBodyLotion_3200_new.html">Almond Milk Veil</a>
+                        </h3>
+                        <p>Normal - 8 fl. oz</p>
+                        <p>$48.00</p>
+                        <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>L'Occitane's Commitments_</h2>
+                <p>To help protect biodiversity, our products are 
+                    developed as sustainably as possible.</p>
+            </div>
+            <div>
+                <img src="images/mainpage_4.png" alt="loccitane_handcream">
+                <a href="footer_LOccitane_Values.html">L'Occitane Values</a>
+            </div>
+        </div>
+        <div>
+            <h2>Another category_</h2>
+            <div>
+                <div>
+                    <a href="list_CitrusVerbena.html">
+                        <img src="images/mainpage_5_1.png" alt="mainpage_5_1">
+                    </a>
+                    <a href="list_CitrusVerbena.html">Citrus Verbena</a>
+                </div>
+                <div>
+                    <a href="list_ClassicVerbena.html">
+                        <img src="images/mainpage_5_2.png" alt="mainpage_5_2">
+                    </a>
+                    <a href="list_ClassicVerbena.html">Classic Verbena</a>
+                </div>
+            </div>
+            <div>
+                <a href="list_VerbenaCarrotFlower.html">
+                    <img src="images/mainpage_5_3.png" alt="mainpage_5_3">
+                </a>
+                <a href="list_VerbenaCarrotFlower.html">Verbena Carrot Flower</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <strong>Safe &amp; Secure Payment</strong>
+                    <p>Our online payment system is operated 
+                        by a service provider specializing in secure 
+                        online payments.<span>For further information 
+                            please refer to the "payment" section of 
+                            our Terms and Conditions.</span></p>
+                </li>
+                <li>
+                    <strong>SHIPPING</strong>
+                    <p>Free standard shipping on all orders of $49+ 3 - 10 
+                        business days from receipt of your order. 
+                        <span>For an additional charge per address, 
+                            we can expedite delivery by FedEx to most 
+                            destinations in 2 - 3 business days.</span></p>
+                </li>
+                <li>
+                    <strong>CUSTOMER SERVICE</strong>
+                    <p>Need Help? Please call:  1-888-623-2880
+                        Monday - Friday 9AM - 11PM EST
+                        Saturday 10AM - 11PM EST</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <img src="images/logo_10.png" alt="welcome_to_loccitane">
+            </div>
+            <div>
+                <h2 class="morebt1">ABOUT US</h2>
+                <ul class="moredata1">
+                    <li><a href="footer_Cultivators_of_Change.html">Cultivators of Change</a></li>
+                    <li><a href="footer_LOccitane_Values.html">L'Occitane Values</a></li>
+                    <li><a href="footer_Sustainable_Beauty.html">Sustainable Beauty</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">L'OCCITANE Group</a></li>
+                    <li><a href="footer_Formulation_Charter.html">Formulation Charter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt2">AT YOUR SERVICE</h2>
+                <ul class="moredata2">
+                    <li><a href="https://www.google.com" class="application">1-888-623-2880</a></li>
+                    <li><a href="helpMainpage.html">Help and Contact</a></li>
+                    <li><a href="signIn.html">Order Tracking</a></li>
+                    <li><a href="footer_ReturnExchanges.html">Return &amp; Exchanges</a></li>
+                    <li><a href="helpMainpage.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt3">SOCIAL MEDIA</h2>
+                <ul class="moredata3">
+                    <li><a href="https://www.facebook.com/loccitaneusa" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/loccitane/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/loccitaneusa" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Cd7XUlv4NPE" target="_blank">Youtube</a></li>
+                </ul>
+                <ul>
+                    <li><a href="footer_Do_Not_Sell_MyInfoRequest–California_Residents.html#donotsell">Do Not Sell My Info Request – 
+                        California Residents</a></li>
+                    <li><a href="footer_SupplyChain_Transparency.html">Supply Chain Transparency</a></li>
+                    <li><a href="footer_TermsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">Investors</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 L’OCCITANE INTERNATIONAL SA. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list_Irresistible_AlmondCollection</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/loccitane.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel">
+        <div>
+            <p>MY BAG_</p>
+            <input type="button" value="close" class="closeButton">
+        </div>
+        <form action="mybag1.html" id="productin">
+            <div>
+                <div>
+                    <img src="images/cart_product.png" alt="cart_product">
+                </div>
+                <div>
+                    <b>Almond Delicious Hands</b>
+                    <small>Volume 1 oz</small>
+                    <div>
+                        <input type="button" class="minus" value="mi">
+                        <input type="text" value="1" id="counter">
+                        <input type="button" class="plus" value="pl"> 
+                    </div>
+                    <div>
+                        <strong>$13.00</strong>
+                        <input type="button" value="Remove" class="reMove">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Subtotal</p>
+                <strong>$13.00</strong>
+            </div>
+            <input type="submit" value="Checkout">
+        </form>
+        <div class="cartpanelEmpty">
+            <span>Your Bag is Empty</span>
+        </div>
+    </div>
+   <header>
+        <div>
+            <nav>
+                <div>
+                    <input type="button" class="menuopenbt" value="open">
+                    <div class="menupanel">
+                        <input type="button" class="menuclosebt" value="close">
+                        <ul>
+                            <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                            <li><a href="list_new.html">NEW & BEST</a></li>
+                            <li>
+                                <span>various CARE</span>
+                                <ol>
+                                    <li><a href="list_Skincare.html">Skincare</a></li>
+                                    <li><a href="list_HandCare.html">Hand Care</a></li>
+                                    <li>
+                                        <span>Body Care</span>
+                                        <ul>
+                                            <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                            <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                            <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                            <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                            <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="list_HairCare.html">Hair Care</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                            <li><a href="signIn.html">ACCOUNT</a></li>
+                            <li><a href="helpMainpage.html">HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                    <li><a href="list_new.html">NEW &amp; BEST</a></li>
+                    <li data-hover="hoverMenu">
+                        <span>various CARE</span>
+                        <ol>
+                            <li><a href="list_Skincare.html">Skincare</a></li>
+                            <li><a href="list_HandCare.html">Hand Care</a></li>
+                            <li>
+                                <span>Body Care</span>
+                                <ul>
+                                    <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                    <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                    <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                    <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                    <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="list_HairCare.html">Hair Care</a></li>
+                            <li><img src="images/gnb.png" alt="productimages"></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="welcome to loccitane"></a>
+                </h1>
+                <ul>
+                    <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                    <li><a href="signIn.html">ACCOUNT</a></li>
+                    <li><a href="helpMainpage.html">HELP</a></li>
+                    <li>
+                        <input type="button" value="cartButton" class="cartButton" data-panel="cartPanel">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="listcontainer">
+        <div id="filterPanel">
+            <div>
+                <strong>FILTER PRODUCTS</strong>
+                <input type="button" value="close" class="closeButton">
+            </div>
+            <div>
+                <span>PRODUCT TYPES</span>
+                <ol>
+                    <li>
+                        <button type="button" id="bodycare">Body Care (3)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="haircare">Hair Care (2)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="handcare">Hand Care (1)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="moisturizer">Moisturizer (3)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="oil">oil (1)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="refill">Refill (2)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="showerproduct">Shower Product (4)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="soap">Soap (2)</button>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">BodyCare</a></li>
+                <li>Irresistible Almond Collection</li>
+            </ol>
+        </nav>
+        <h2>Irresistible Almond Collection_</h2>
+        <div>
+            <strong>RECIPIENT</strong>
+            <ul>
+                <li>
+                    <a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a>
+                </li>
+                <li>
+                    <a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a>
+                </li>
+                <li>
+                    <a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a>
+                </li>
+                <li>
+                    <a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a>
+                </li>
+                <li>
+                    <a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="Filter by" data-panel="filterPanel" class="openButton">
+            <select>
+                <option>Sort by</option>
+                <option>Best Seller</option>
+                <option>New In</option>
+            </select>
+        </div>
+        <ul>
+            <li>
+                <a href="detail_almond_2-in-1_Exfoliating_Soap_Irresistible_AlmondCollection.html">
+                    <img src="images/almond_2-in-1_Exfoliating_Soap.png" alt="Almond_2-in-1_Exfoliating_Soap">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almond_2-in-1_Exfoliating_Soap_Irresistible_AlmondCollection.html">Almond 2-in-1 Exfoliating Soap</a>
+                    <small>Normal - 4.4 oz</small>
+                    <strong>$14.50</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondConditioner_2400_Irresistible_AlmondCollection.html">
+                    <img src="images/almondConditioner_2400.png" alt="AlmondConditioner_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_almondConditioner_2400_Irresistible_AlmondCollection.html">Almond Conditioner</a>
+                    <small>Volume 8.1 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondDeliciousExfoliatingSoap_650_Irresistible_AlmondCollection.html">
+                    <img src="images/almondDeliciousExfoliatingSoap_650.png" alt="AlmondDeliciousExfoliatingSoap_6.50">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almondDeliciousExfoliatingSoap_650_Irresistible_AlmondCollection.html">Almond Delicious Exfoliating Soap</a>
+                    <small>Normal - 5.2 oz</small>
+                    <strong>$6.50</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondDeliciousHands_1300_Irresistible_AlmondCollection.html">
+                    <img src="images/almondDeliciousHands_1300.png" alt="AlmondDeliciousHands_13.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_almondDeliciousHands_1300_Irresistible_AlmondCollection.html">Almond Delicious Hands</a>
+                    <small>Mini - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondDelightfulBodyBalm_4200_Irresistible_AlmondCollection.html">
+                    <img src="images/almondDelightfulBodyBalm_4200.png" alt="AlmondDelightfulBodyBalm_42.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almondDelightfulBodyBalm_4200_Irresistible_AlmondCollection.html">Almond Delightful Body Balm</a>
+                    <small>Normal - 3.4 oz</small>
+                    <strong>$42.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondDelightfulBodyMist_3600_Irresistible_AlmondCollection.html">
+                    <img src="images/almondDelightfulBodyMist_3600.png" alt="AlmondDelightfulBodyMist_36.00">
+                </a>
+                <div>
+                    <mark class="newIn">new in</mark>
+                    <a href="detail_almondDelightfulBodyMist_3600_Irresistible_AlmondCollection.html">Almond Delightful Body Mist</a>
+                    <small>Normal - 3.3 fl. oz</small>
+                    <strong>$36.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almond_Milk_Concentrate_5800_Irresistible_AlmondCollection.html">
+                    <img src="images/almond_Milk_Concentrate_5800.png" alt="Almond_Milk_Concentrate_58.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almond_Milk_Concentrate_5800_Irresistible_AlmondCollection.html">Almond Milk Concentrate</a>
+                    <small>Normal - 6.9 oz</small>
+                    <strong>$58.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondMilkVeil_4800_Irresistible_AlmondCollection.html">
+                    <img src="images/almondMilkVeil_4800.png" alt="AlmondMilkVeil_48.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almondMilkVeil_4800_Irresistible_AlmondCollection.html">Almond Milk Veil</a>
+                    <small>Normal - 8 fl. oz</small>
+                    <strong>$48.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondShampoo_2400_Irresistible_AlmondCollection.html">
+                    <img src="images/almondShampoo_2400.png" alt="AlmondShampoo_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_almondShampoo_2400_Irresistible_AlmondCollection.html">Almond Shampoo</a>
+                    <small>Normal - 8.1 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondMilkyBath_4200_Irresistible_AlmondCollection.html">
+                    <img src="images/almondMilkyBath_4200.png" alt="AlmondMilkyBath_42.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_almondMilkyBath_4200_Irresistible_AlmondCollection.html">Almond Milky Bath</a>
+                    <small>Volume 16.9 fl. oz</small>
+                    <strong>$42.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almond_Shower_Oil_2900_Irresistible_AlmondCollection.html">
+                    <img src="images/almond_Shower_Oil_2900.png" alt="list.Almond_Shower_Oil_29.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almond_Shower_Oil_2900_Irresistible_AlmondCollection.html">Almond Shower Oil</a>
+                    <small>Normal - 8.4 fl.oz</small>
+                    <strong>$29.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almond_Shower_Oil_Refill_4200_Irresistible_AlmondCollection.html">
+                    <img src="images/almond_Shower_Oil_Refill_4200.png" alt="Almond_Shower_Oil_Refill_42.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almond_Shower_Oil_Refill_4200_Irresistible_AlmondCollection.html">Almond Shower Oil Refill</a>
+                    <small>Normal - 16.9 oz</small>
+                    <strong>$42.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondShowerScrub_3000_Irresistible_AlmondCollection.html">
+                    <img src="images/almondShowerScrub_3000.png" alt="AlmondShowerScrub_30.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almondShowerScrub_3000_Irresistible_AlmondCollection.html">Almond Shower Scrub</a>
+                    <small>Volume 7.3 oz</small>
+                    <strong>$30.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almond_Shower_Oil_4600_Irresistible_AlmondCollection.html">
+                    <img src="images/almond_Shower_Oil_4600.png" alt="Almond_Shower_Oil_46.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almond_Shower_Oil_4600_Irresistible_AlmondCollection.html">Almond Shower Oil</a>
+                    <small>Normal - 8.4 fl. oz</small>
+                    <strong>$46.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondSuppleSkinOil_5200_Irresistible_AlmondCollection.html">
+                    <img src="images/almondSuppleSkinOil_5200.png" alt="AlmondSuppleSkinOil_52.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almondSuppleSkinOil_5200_Irresistible_AlmondCollection.html">Almond Supple Skin Oil</a>
+                    <strong class="volumeNo">$52.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondMilkConcentrateRefill_4600_Irresistible_AlmondCollection.html">
+                    <img src="images/almondMilkConcentrateRefill_4600.png" alt="AlmondMilkConcentrateRefill_46.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_almondMilkConcentrateRefill_4600_Irresistible_AlmondCollection.html">Almond Milk Concentrate Refill</a>
+                    <small>Refill - 7 oz</small>
+                    <strong>$46.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+        </ul>
+    </div>
+ <footer>
+        <div>
+            <ul>
+                <li>
+                    <strong>Safe &amp; Secure Payment</strong>
+                    <p>Our online payment system is operated 
+                        by a service provider specializing in secure 
+                        online payments.<span>For further information 
+                            please refer to the "payment" section of 
+                            our Terms and Conditions.</span></p>
+                </li>
+                <li>
+                    <strong>SHIPPING</strong>
+                    <p>Free standard shipping on all orders of $49+ 3 - 10 
+                        business days from receipt of your order. 
+                        <span>For an additional charge per address, 
+                            we can expedite delivery by FedEx to most 
+                            destinations in 2 - 3 business days.</span></p>
+                </li>
+                <li>
+                    <strong>CUSTOMER SERVICE</strong>
+                    <p>Need Help? Please call:  1-888-623-2880
+                        Monday - Friday 9AM - 11PM EST
+                        Saturday 10AM - 11PM EST</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <img src="images/logo_10.png" alt="welcome_to_loccitane">
+            </div>
+            <div>
+                <h2 class="morebt1">ABOUT US</h2>
+                <ul class="moredata1">
+                    <li><a href="footer_Cultivators_of_Change.html">Cultivators of Change</a></li>
+                    <li><a href="footer_LOccitane_Values.html">L'Occitane Values</a></li>
+                    <li><a href="footer_Sustainable_Beauty.html">Sustainable Beauty</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">L'OCCITANE Group</a></li>
+                    <li><a href="footer_Formulation_Charter.html">Formulation Charter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt2">AT YOUR SERVICE</h2>
+                <ul class="moredata2">
+                    <li><a href="https://www.google.com" class="application">1-888-623-2880</a></li>
+                    <li><a href="helpMainpage.html">Help and Contact</a></li>
+                    <li><a href="signIn.html">Order Tracking</a></li>
+                    <li><a href="footer_ReturnExchanges.html">Return &amp; Exchanges</a></li>
+                    <li><a href="helpMainpage.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt3">SOCIAL MEDIA</h2>
+                <ul class="moredata3">
+                    <li><a href="https://www.facebook.com/loccitaneusa" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/loccitane/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/loccitaneusa" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Cd7XUlv4NPE" target="_blank">Youtube</a></li>
+                </ul>
+                <ul>
+                    <li><a href="footer_Do_Not_Sell_MyInfoRequest–California_Residents.html#donotsell">Do Not Sell My Info Request – 
+                        California Residents</a></li>
+                    <li><a href="footer_SupplyChain_Transparency.html">Supply Chain Transparency</a></li>
+                    <li><a href="footer_TermsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">Investors</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 L’OCCITANE INTERNATIONAL SA. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

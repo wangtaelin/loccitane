@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list_HandCare</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/loccitane.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel">
+        <div>
+            <p>MY BAG_</p>
+            <input type="button" value="close" class="closeButton">
+        </div>
+        <form action="mybag1.html" id="productin">
+            <div>
+                <div>
+                    <img src="images/cart_product.png" alt="cart_product">
+                </div>
+                <div>
+                    <b>Almond Delicious Hands</b>
+                    <small>Volume 1 oz</small>
+                    <div>
+                        <input type="button" class="minus" value="mi">
+                        <input type="text" value="1" id="counter">
+                        <input type="button" class="plus" value="pl"> 
+                    </div>
+                    <div>
+                        <strong>$13.00</strong>
+                        <input type="button" value="Remove" class="reMove">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Subtotal</p>
+                <strong>$13.00</strong>
+            </div>
+            <input type="submit" value="Checkout">
+        </form>
+        <div class="cartpanelEmpty">
+            <span>Your Bag is Empty</span>
+        </div>
+    </div>
+   <header>
+        <div>
+            <nav>
+                <div>
+                    <input type="button" class="menuopenbt" value="open">
+                    <div class="menupanel">
+                        <input type="button" class="menuclosebt" value="close">
+                        <ul>
+                            <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                            <li><a href="list_new.html">NEW & BEST</a></li>
+                            <li>
+                                <span>various CARE</span>
+                                <ol>
+                                    <li><a href="list_Skincare.html">Skincare</a></li>
+                                    <li><a href="list_HandCare.html">Hand Care</a></li>
+                                    <li>
+                                        <span>Body Care</span>
+                                        <ul>
+                                            <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                            <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                            <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                            <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                            <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="list_HairCare.html">Hair Care</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                            <li><a href="signIn.html">ACCOUNT</a></li>
+                            <li><a href="helpMainpage.html">HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                    <li><a href="list_new.html">NEW &amp; BEST</a></li>
+                    <li data-hover="hoverMenu">
+                        <span>various CARE</span>
+                        <ol>
+                            <li><a href="list_Skincare.html">Skincare</a></li>
+                            <li><a href="list_HandCare.html">Hand Care</a></li>
+                            <li>
+                                <span>Body Care</span>
+                                <ul>
+                                    <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                    <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                    <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                    <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                    <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="list_HairCare.html">Hair Care</a></li>
+                            <li><img src="images/gnb.png" alt="productimages"></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="welcome to loccitane"></a>
+                </h1>
+                <ul>
+                    <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                    <li><a href="signIn.html">ACCOUNT</a></li>
+                    <li><a href="helpMainpage.html">HELP</a></li>
+                    <li>
+                        <input type="button" value="cartButton" class="cartButton" data-panel="cartPanel">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="listcontainer">
+        <div id="filterPanel">
+            <div>
+                <strong>FILTER PRODUCTS</strong>
+                <input type="button" value="close" class="closeButton">
+            </div>
+            <div>
+                <span>PRODUCT TYPES</span>
+                <ol>
+                    <li>
+                        <button type="button" id="balm">Balm (5)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="oil">oil (1)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="handcare">Hand Cream (18)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="handsoap">Hand Soap (14)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="lotion">Lotion (3)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="refill">Refill (4)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="scrub">Scrub (1)</button>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Various Care</a></li>
+                <li>Handcare</li>
+            </ol>
+        </nav>
+        <h2>Handcare_</h2>
+        <div>
+            <input type="button" value="Filter by" data-panel="filterPanel" class="openButton">
+            <select>
+                <option>Sort by</option>
+                <option>Best Seller</option>
+                <option>New In</option>
+            </select>
+        </div>
+        <ul>
+            <li>
+                <a href="detail_sheaHands&BodyUltraRichWash_3300_HandCare.html">
+                    <img src="images/sheaHands&BodyUltraRichWash_3300.png" alt="Shea Hands&BodyUltraRichWash_33.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaHands&BodyUltraRichWash_3300_HandCare.html">Shea Hands & Body Ultra Rich Wash</a>
+                    <small>Large - 17.9 oz</small>
+                    <strong>$33.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_lavenderHandCream_2600_HandCare.html">
+                    <img src="images/lavenderHandCream_2600.png" alt="LavenderHandCream_26.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_lavenderHandCream_2600_HandCare.html">Lavender Hand Cream</a>
+                    <small>Normal - 2.6 oz</small>
+                    <strong>$26.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_cherryBlossomHandCream30ML_1300_HandCare.html">
+                    <img src="images/cherryBlossomHandCream30ML_1300.png" alt="cherryBlossomHandCream30ML_1300">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_cherryBlossomHandCream30ML_1300_HandCare.html">Cherry Blossom Hand Cream</a>
+                    <small>Small - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_lavenderCleansingHandWash_2400_HandCare.html">
+                    <img src="images/lavenderCleansingHandWash_2400.png" alt="LavenderCleansingHandWash_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_lavenderCleansingHandWash_2400_HandCare.html">Lavender Cleansing Hand Wash</a>
+                    <small>Normal - 10.1 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondDeliciousHands_1300_HandCare.html">
+                    <img src="images/almondDeliciousHands_1300.png" alt="AlmondDeliciousHands_13.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_almondDeliciousHands_1300_HandCare.html">Almond Delicious Hands</a>
+                    <small>Mini - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_cadeMulti-BenefitsHandCream_2600_HandCare.html">
+                    <img src="images/cadeMulti-BenefitsHandCream_2600.png" alt="CadeMulti-BenefitsHandCream_26.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_cadeMulti-BenefitsHandCream_2600_HandCare.html">Cade Multi-Benefits Hand Cream</a>
+                    <small>Normal - 1.7 oz</small>
+                    <strong>$26.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_citrusVerbenaHandCreamGel_1300_HandCare.html">
+                    <img src="images/citrusVerbenaHandCreamGel_1300.png" alt="CitrusVerbenaHandCreamGel_13.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_citrusVerbenaHandCreamGel_1300_HandCare.html">Citrus Verbena Hand Cream Gel</a>
+                    <small>Normal - 1 fl.oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_lavenderCleansingHandWashRefill_3000_HandCare.html">
+                    <img src="images/lavenderCleansingHandWashRefill_3000.png" alt="LavenderCleansingHandWashRefill_30.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_lavenderCleansingHandWashRefill_3000_HandCare.html">Lavender Cleansing Hand Wash Refill</a>
+                    <small>Refill - 16.9 fl.oz</small>
+                    <strong>$30.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_verbenaCoolingHandCreamGel_2600_HandCare.html">
+                    <img src="images/verbenaCoolingHandCreamGel_2600.png" alt="VerbenaCoolingHandCreamGel_26.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_verbenaCoolingHandCreamGel_2600_HandCare.html">Verbena Cooling Hand Cream Gel</a>
+                    <small>Normal - 2.6 oz</small>
+                    <strong>$26.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaButterHands&BodyExtra-GentleLotion_3200_HandCare.html">
+                    <img src="images/sheaButterHands&BodyExtra-GentleLotion_3200.png" alt="SheaButterHands&BodyExtra-GentleLotion_32.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaButterHands&BodyExtra-GentleLotion_3200_HandCare.html">Shea Butter Hands & Body Extra-Gentle Lotion</a>
+                    <small>Normal - 10.1 fl. oz</small>
+                    <strong>$32.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaButterHands&BodyVerbenaExtra-GentleLotion_3200_HandCare.html">
+                    <img src="images/sheaButterHands&BodyVerbenaExtra-GentleLotion_3200.png" alt="SheaButterHands&BodyVerbenaExtra-GentleLotion_32.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaButterHands&BodyVerbenaExtra-GentleLotion_3200_HandCare.html">Shea Butter Hands & Body Verbena Extra-Gentle Lotion</a>
+                    <small>Normal - 10.1 fl. oz</small>
+                    <strong>$32.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaHands&BodyLavenderLiquidSoap_3300_HandCare.html">
+                    <img src="images/sheaHands&BodyLavenderLiquidSoap_3300.png" alt="SheaHands&BodyLavenderLiquidSoap_33.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaHands&BodyLavenderLiquidSoap_3300_HandCare.html">Shea Hands & Body Lavender Liquid Soap</a>
+                    <small>Large - 16.9 fl. oz</small>
+                    <strong>$33.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaHands&BodyLavenderLiquidSoap_2400_HandCare.html">
+                    <img src="images/sheaHands&BodyLavenderLiquidSoap_2400.png" alt="SheaHands&BodyLavenderLiquidSoap_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaHands&BodyLavenderLiquidSoap_2400_HandCare.html">Shea Hands & Body Lavender Liquid Soap</a>
+                    <small>Normal - 10.1 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaRoseLiquidSoap_2400_HandCare.html">
+                    <img src="images/sheaRoseLiquidSoap_2400.png" alt="SheaRoseLiquidSoap_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaRoseLiquidSoap_2400_HandCare.html">Shea Rose Liquid Soap</a>
+                    <small>Normal - 10.1 oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaHands&BodyUltraRichWashRefill_3000_HandCare.html">
+                    <img src="images/sheaHands&BodyUltraRichWashRefill_3000.png" alt="SheaHands&BodyUltraRichWashRefill_30.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaHands&BodyUltraRichWashRefill_3000_HandCare.html">Shea Hands & Body Ultra Rich Wash Refill</a>
+                    <small>Refill - 16.9 fl. oz</small>
+                    <strong>$30.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaButterVanillaBouquetHandCream_1300_HandCare.html">
+                    <img src="images/sheaButterVanillaBouquetHandCream_1300.png" alt="SheaButterVanillaBouquetHandCream_13.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaButterVanillaBouquetHandCream_1300_HandCare.html">Shea Butter Vanilla Bouquet Hand Cream</a>
+                    <small>Normal - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaLavenderHands&BodyLiquidSoapRefill_3000_HandCare.html">
+                    <img src="images/sheaLavenderHands&BodyLiquidSoapRefill_3000.png" alt="SheaLavenderHands&BodyLiquidSoapRefill_30.00">
+                </a>
+                <div>
+                    <mark class="newIn">new in</mark>
+                    <a href="detail_sheaLavenderHands&BodyLiquidSoapRefill_3000_HandCare.html">Shea Lavender Hands & Body Liquid Soap Refill</a>
+                    <small>Normal - 16.9 fl. oz</small>
+                    <strong>$30.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaHands&BodyVerbenaLiquidSoap_3300_HandCare.html">
+                    <img src="images/sheaHands&BodyVerbenaLiquidSoap_3300.png" alt="SheaHands&BodyVerbenaLiquidSoap_33.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaHands&BodyVerbenaLiquidSoap_3300_HandCare.html">Shea Hands & Body Verbena Liquid Soap</a>
+                    <small>Large - 16.9 fl. oz</small>
+                    <strong>$33.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaVerbenaHand&BodyLiquidSoapRefill_3000_HandCare.html">
+                    <img src="images/sheaVerbenaHand&BodyLiquidSoapRefill_3000.png" alt="SheaVerbenaHand&BodyLiquidSoapRefill_30.00">
+                </a>
+                <div>
+                    <mark class="newIn">new in</mark>
+                    <a href="detail_sheaVerbenaHand&BodyLiquidSoapRefill_3000_HandCare.html">Shea Verbena Hand & Body Liquid Soap Refill</a>
+                    <small>Normal - 16.9 fl. oz</small>
+                    <strong>$30.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaHands&BodyVerbenaLiquidSoap_2400_HandCare.html">
+                    <img src="images/sheaHands&BodyVerbenaLiquidSoap_2400.png" alt="SheaHands&BodyVerbenaLiquidSoap_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaHands&BodyVerbenaLiquidSoap_2400_HandCare.html">Shea Hands & Body Verbena Liquid Soap</a>
+                    <small>Normal - 10.1 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaNail&CuticleOil_2200_HandCare.html">
+                    <img src="images/sheaNail&CuticleOil_2200.png" alt="SheaNail&CuticleOil_22.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_sheaNail&CuticleOil_2200_HandCare.html">Shea Nail & Cuticle Oil</a>
+                    <small>Normal - 0.25 fl. oz</small>
+                    <strong>$22.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_immortelleSheaYouthHandCream_4000_HandCare.html">
+                    <img src="images/immortelleSheaYouthHandCream_4000.png" alt="ImmortelleSheaYouthHandCream_40.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_immortelleSheaYouthHandCream_4000_HandCare.html">Immortelle Shea Youth Hand Cream</a>
+                    <small>Normal - 2.6 oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_lavenderMoisturizingHandLotion_3200_HandCare.html">
+                    <img src="images/lavenderMoisturizingHandLotion_3200.png" alt="LavenderMoisturizingHandLotion_32.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_lavenderMoisturizingHandLotion_3200_HandCare.html">Lavender Moisturizing Hand Lotion</a>
+                    <small>Normal - 10.5 fl.oz</small>
+                    <strong>$32.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_solidarityBalmWithVerbenaExtract_850_HandCare.html">
+                    <img src="images/solidarityBalmWithVerbenaExtract_850.png" alt="SolidarityBalmWithVerbenaExtract_8.50">
+                </a>
+                <div>
+                    <mark class="newIn">new in</mark>
+                    <a href="detail_solidarityBalmWithVerbenaExtract_850_HandCare.html">Solidarity Balm With Verbena Extract</a>
+                    <small>Volume 0.7 oz</small>
+                    <strong>$8.50</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_pivoineFloraHandCream_1300_HandCare.html">
+                    <img src="images/pivoineFloraHandCream_1300.png" alt="PivoineFloraHandCream_13.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_pivoineFloraHandCream_1300_HandCare.html">Pivoine Flora Hand Cream</a>
+                    <small>Normal - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_lePetitRemèdeCosmeticBalm_1550_HandCare.html">
+                    <img src="images/lePetitRemèdeCosmeticBalm_1550.png" alt="LePetitRemèdeCosmeticBalm_15.50">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_lePetitRemèdeCosmeticBalm_1550_HandCare.html">Le Petit Remède Cosmetic Balm</a>
+                    <small>Normal - 0.5 oz</small>
+                    <strong>$15.50</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_organic-Certified_Pure_Shea_Butter_4000_HandCare.html">
+                    <img src="images/organic-Certified_Pure_Shea_Butter.png" alt="Organic-Certified_Pure_Shea_Butter">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_organic-Certified_Pure_Shea_Butter_4000_HandCare.html">Organic-Certified* Pure Shea Butter</a>
+                    <small>Volume 5.2 oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaButterHandCream_3000_HandCare.html">
+                    <img src="images/sheaButterHandCream_3000.png" alt="SheaButterHandCream_30.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_sheaButterHandCream_3000_HandCare.html">Shea Butter Hand Cream</a>
+                    <small>Normal - 5.2 oz</small>
+                    <strong>$30.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaButterHandCream_1300_HandCare.html">
+                    <img src="images/sheaButterHandCream_1300.png" alt="SheaButterHandCream_13.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaButterHandCream_1300_HandCare.html">Shea Butter Hand Cream</a>
+                    <small>Normal - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_néroli&OrchidéeHandCream_2600_HandCare.html">
+                    <img src="images/néroli&OrchidéeHandCream_2600.png" alt="Néroli&OrchidéeHandCream_26.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_néroli&OrchidéeHandCream_2600_HandCare.html">Néroli & Orchidée Hand Cream</a>
+                    <small>Large - 2.6 oz</small>
+                    <strong>$26.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_roseHandCream_2600_HandCare.html">
+                    <img src="images/roseHandCream_2600.png" alt="RoseHandCream_26.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_roseHandCream_2600_HandCare.html">Rose Hand Cream</a>
+                    <small>Normal - 2.6 oz</small>
+                    <strong>$26.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_osmanthusHandCream_1300_HandCare.html">
+                    <img src="images/osmanthusHandCream_1300.png" alt="OsmanthusHandCream_13.00">
+                </a>
+                <div>
+                    <mark class="newIn">new in</mark>
+                    <a href="detail_osmanthusHandCream_1300_HandCare.html">Osmanthus Hand Cream</a>
+                    <small>Normal - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaHands&BodyUltraRichWash_2400_HandCare.html">
+                    <img src="images/sheaHands&BodyUltraRichWash_2400.png" alt="SheaHands&BodyUltraRichWash_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaHands&BodyUltraRichWash_2400_HandCare.html">Shea Hands & Body Ultra Rich Wash</a>
+                    <small>Normal - 10.7 oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaRoseLiquidSoap_3300_HandCare.html">
+                    <img src="images/sheaRoseLiquidSoap_3300.png" alt="SheaRoseLiquidSoap_33.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaRoseLiquidSoap_3300_HandCare.html">Shea Rose Liquid Soap</a>
+                    <small>Normal - 16.9 fl. oz</small>
+                    <strong>$33.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_verbenaCoolingHandCreamGel_1300_HandCare.html">
+                    <img src="images/verbenaCoolingHandCreamGel_1300.png" alt="VerbenaCoolingHandCreamGel_13.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_verbenaCoolingHandCreamGel_1300_HandCare.html">Verbena Cooling Hand Cream Gel</a>
+                    <small>Normal - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_lavenderHandCream_1300_HandCare.html">
+                    <img src="images/lavenderHandCream_1300.png" alt="LavenderHandCream_13.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_lavenderHandCream_1300_HandCare.html">Lavender Hand Cream</a>
+                    <small>Normal - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_néroli&OrchidéeHandCream_1300_HandCare.html">
+                    <img src="images/néroli&OrchidéeHandCream_1300.png" alt="Néroli&OrchidéeHandCream_13.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_néroli&OrchidéeHandCream_1300_HandCare.html">Néroli & Orchidée Hand Cream</a>
+                    <small>Normal - 1 oz</small>
+                    <strong>$13.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaButterIntensiveHandBalm_4000_HandCare.html">
+                    <img src="images/sheaButterIntensiveHandBalm_4000.png" alt="SheaButterIntensiveHandBalm_40.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_sheaButterIntensiveHandBalm_4000_HandCare.html">Shea Butter Intensive Hand Balm</a>
+                    <small>Normal - 5.3 oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaButterIntensiveHandBalm_2400_HandCare.html">
+                    <img src="images/sheaButterIntensiveHandBalm_2400.png" alt="SheaButterIntensiveHandBalm_24.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_sheaButterIntensiveHandBalm_2400_HandCare.html">Shea Butter Intensive Hand Balm</a>
+                    <small>Normal - 1.7 oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaButterOne-MinuteHandScrub_1400_HandCare.html">
+                    <img src="images/sheaButterOne-MinuteHandScrub_1400.png" alt="SheaButterOne-MinuteHandScrub_14.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaButterOne-MinuteHandScrub_1400_HandCare.html">Shea Butter One-Minute Hand Scrub</a>
+                    <small>Volume 1 oz</small>
+                    <strong>$14.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_sheaVerbenaExtra-GentleSoap_1000_HandCare.html">
+                    <img src="images/sheaVerbenaExtra-GentleSoap_1000.png" alt="SheaVerbenaExtra-GentleSoap_10.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_sheaVerbenaExtra-GentleSoap_1000_HandCare.html">Shea Verbena Extra-Gentle Soap</a>
+                    <small>Normal - 3.5 oz</small>
+                    <strong>$10.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_verbenaCarrotFlowerHandCream_1400_HandCare.html">
+                    <img src="images/verbenaCarrotFlowerHandCream_1400.png" alt="VerbenaCarrotFlowerHandCream_14.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_verbenaCarrotFlowerHandCream_1400_HandCare.html">Verbena Carrot Flower Hand Cream</a>
+                    <small>Normal - 1 oz</small>
+                    <strong>$14.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+        </ul>
+    </div>
+ <footer>
+        <div>
+            <ul>
+                <li>
+                    <strong>Safe &amp; Secure Payment</strong>
+                    <p>Our online payment system is operated 
+                        by a service provider specializing in secure 
+                        online payments.<span>For further information 
+                            please refer to the "payment" section of 
+                            our Terms and Conditions.</span></p>
+                </li>
+                <li>
+                    <strong>SHIPPING</strong>
+                    <p>Free standard shipping on all orders of $49+ 3 - 10 
+                        business days from receipt of your order. 
+                        <span>For an additional charge per address, 
+                            we can expedite delivery by FedEx to most 
+                            destinations in 2 - 3 business days.</span></p>
+                </li>
+                <li>
+                    <strong>CUSTOMER SERVICE</strong>
+                    <p>Need Help? Please call:  1-888-623-2880
+                        Monday - Friday 9AM - 11PM EST
+                        Saturday 10AM - 11PM EST</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <img src="images/logo_10.png" alt="welcome_to_loccitane">
+            </div>
+            <div>
+                <h2 class="morebt1">ABOUT US</h2>
+                <ul class="moredata1">
+                    <li><a href="footer_Cultivators_of_Change.html">Cultivators of Change</a></li>
+                    <li><a href="footer_LOccitane_Values.html">L'Occitane Values</a></li>
+                    <li><a href="footer_Sustainable_Beauty.html">Sustainable Beauty</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">L'OCCITANE Group</a></li>
+                    <li><a href="footer_Formulation_Charter.html">Formulation Charter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt2">AT YOUR SERVICE</h2>
+                <ul class="moredata2">
+                    <li><a href="https://www.google.com" class="application">1-888-623-2880</a></li>
+                    <li><a href="helpMainpage.html">Help and Contact</a></li>
+                    <li><a href="signIn.html">Order Tracking</a></li>
+                    <li><a href="footer_ReturnExchanges.html">Return &amp; Exchanges</a></li>
+                    <li><a href="helpMainpage.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt3">SOCIAL MEDIA</h2>
+                <ul class="moredata3">
+                    <li><a href="https://www.facebook.com/loccitaneusa" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/loccitane/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/loccitaneusa" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Cd7XUlv4NPE" target="_blank">Youtube</a></li>
+                </ul>
+                <ul>
+                    <li><a href="footer_Do_Not_Sell_MyInfoRequest–California_Residents.html#donotsell">Do Not Sell My Info Request – 
+                        California Residents</a></li>
+                    <li><a href="footer_SupplyChain_Transparency.html">Supply Chain Transparency</a></li>
+                    <li><a href="footer_TermsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">Investors</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 L’OCCITANE INTERNATIONAL SA. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

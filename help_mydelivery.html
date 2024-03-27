@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help_mydelivery</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/loccitane.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel">
+        <div>
+            <p>MY BAG_</p>
+            <input type="button" value="close" class="closeButton">
+        </div>
+        <form action="mybag1.html" id="productin">
+            <div>
+                <div>
+                    <img src="images/cart_product.png" alt="cart_product">
+                </div>
+                <div>
+                    <b>Almond Delicious Hands</b>
+                    <small>Volume 1 oz</small>
+                    <div>
+                        <input type="button" class="minus" value="mi">
+                        <input type="text" value="1" id="counter">
+                        <input type="button" class="plus" value="pl"> 
+                    </div>
+                    <div>
+                        <strong>$13.00</strong>
+                        <input type="button" value="Remove" class="reMove">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Subtotal</p>
+                <strong>$13.00</strong>
+            </div>
+            <input type="submit" value="Checkout">
+        </form>
+        <div class="cartpanelEmpty">
+            <span>Your Bag is Empty</span>
+        </div>
+    </div>
+   <header>
+        <div>
+            <nav>
+                <div>
+                    <input type="button" class="menuopenbt" value="open">
+                    <div class="menupanel">
+                        <input type="button" class="menuclosebt" value="close">
+                        <ul>
+                            <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                            <li><a href="list_new.html">NEW & BEST</a></li>
+                            <li>
+                                <span>various CARE</span>
+                                <ol>
+                                    <li><a href="list_Skincare.html">Skincare</a></li>
+                                    <li><a href="list_HandCare.html">Hand Care</a></li>
+                                    <li>
+                                        <span>Body Care</span>
+                                        <ul>
+                                            <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                            <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                            <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                            <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                            <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="list_HairCare.html">Hair Care</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                            <li><a href="signIn.html">ACCOUNT</a></li>
+                            <li><a href="helpMainpage.html">HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                    <li><a href="list_new.html">NEW &amp; BEST</a></li>
+                    <li data-hover="hoverMenu">
+                        <span>various CARE</span>
+                        <ol>
+                            <li><a href="list_Skincare.html">Skincare</a></li>
+                            <li><a href="list_HandCare.html">Hand Care</a></li>
+                            <li>
+                                <span>Body Care</span>
+                                <ul>
+                                    <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                    <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                    <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                    <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                    <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="list_HairCare.html">Hair Care</a></li>
+                            <li><img src="images/gnb.png" alt="productimages"></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="welcome to loccitane"></a>
+                </h1>
+                <ul>
+                    <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                    <li><a href="signIn.html">ACCOUNT</a></li>
+                    <li><a href="helpMainpage.html">HELP</a></li>
+                    <li>
+                        <input type="button" value="cartButton" class="cartButton" data-panel="cartPanel">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="helpdetail">
+        <h2>HOW CAN I HELP YOU TODAY</h2>
+        <a href="helpMainpage.html">Back</a>
+        <div>
+            <h3>MY DELIVERY</h3>
+            <div>
+                <h4 class="morebt1"><span>Do you provide free shipping for orders going to Alaska, Hawaii, or Puerto Rico?</span></h4>
+                <div class="moredata1">
+                    <p>All orders to these states have a shipping charge of $17.99. We do not offer free shipping at any time for these states.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt2"><span>Do you ship to any U.S. Territories aside from Puerto Rico?</span></h4>
+                <div class="moredata2">
+                    <p>Yes! We ship to the following U.S. Territories: American Samoa, Federated States of Micronesia, Guam, Marshall Islands, Northern Mariana islands, Palau, 
+                        and the Virgins Islands. Standard shipping to these territories is $4.95. However, we do not have the option to place these orders online at this time, but are 
+                        happy to do so over the phone at 1-888-623-2880.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt3"><span>When will my order ship?</span></h4>
+                <div class="moredata3">
+                    <p>Orders are processed within 1-2 business days. We do not ship on the weekends or federal holidays. If you place your order on Saturday or Sunday, it will be 
+                        shipped the following Tuesday. Express and Overnight orders will be processed the same day if the order is placed before 3:00 PM EST on a weekday. Please 
+                        allow 1 processing day for Express and Overnight orders placed after 3:00 PM EST.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt4"><span>Will all of my items come in one package?</span></h4>
+                <div class="moredata4">
+                    <p>A majority of our orders are shipped in one box. However sometimes the contents of your order are split up into multiple packages to help evenly distribute 
+                        weight.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt5"><span>My order did not come with the promotional item I redeemed at checkout.</span></h4>
+                <div class="moredata5">
+                    <p>Please make sure that you did not use any other offers at the time of checkout. Promotions are available while supplies last.</p>
+                    <p>Please note that you must enter a promotional code at checkout in order for you to redeem the promotion. At no time do we offer promotions that are 
+                        automatically applied at checkout, unless you qualify for free shipping. If you are certain we made a mistake, please call us at 1-888-623-2880 or send us an 
+                        email at contact.en-us@loccitane.com, providing your order ID and the promotional code you tried to use.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt6"><span>Do you have any shipping restrictions?</span></h4>
+                <div class="moredata6">
+                    <p>Yes we do. Some of the products we sell are considered Hazardous Materials (HAZMAT). Hazardous Materials can be: aerosol items, certain alcohol-based 
+                        items, items that contain contents under pressures, or are potentially flammable. The U.S. Department of Transportation requires that all HAZMAT items are 
+                        shipped via standard shipping. As some shipping methods involve air travel, there are air shipment restrictions that do not allow HAZMAT items to be flown. 
+                        Because of this, we are unable to ship HAZMAT items to Alaska, Hawaii, or PR. If you would like to know which products we carry are considered HAZMAT, 
+                        please send us an email at contact.en-us@loccitane.com. A Customer Care Representative will be happy to provide this information.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt7"><span>Where do you ship to?</span></h4>
+                <div class="moredata7">
+                    <p>We ship to all 50 states and U.S. Territories. We also accept orders going to APO/FPO/DPO addresses. We accept PO Box addresses. We ship to the following U.S.
+                        Territories: American Samoa, Federated States of Micronesia, Guam, Marshall Islands, Northern Mariana Islands, Palau, and the Virgins Islands. Standard 
+                       shipping to these territories is $4.95. However, we do not have the option to place these orders online at this time, but are happy to do so over the phone at 
+                       1-888-623-2880.</p>
+                    <strong>Alaska, Hawaii and Puerto Rico:</strong>
+                    <p>We do not offer free shipping at any time for these states.<br>
+                        All orders to these states have a shipping charge of $17.99</p>
+                    <p>*Order arrival times may vary based on location</p>
+                    <p><b>Restricted items:</b> Due to air transport restrictions and regulations, the following items are required by the U.S. Department of Transportation to be shipped 
+                        by Standard Ground Shipping only and cannot be shipped to P.O. Boxes or (APO/FPO), or to non-continental locations (Hawaii, Puerto Rico and all U.S. 
+                        Territories, including American Samoa, Marshall Islands, Micronesia, North Mariana Islands, Palau, Puerto Rico and the U.S. Virgin Islands). 
+                        These items include:</p>
+                    <ul>
+                        <li>- Aerosols</li>
+                        <li>- Pressurized spray cans</li>
+                        <li>- Alcohol-based products</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt8"><span>My tracking information says that my order has been delivered to Dayton, NJ.</span></h4>
+                <div class="moredata8">
+                    <p>If your tracking information states that your order has been delivered to DAYTON, NJ 08810, we regret to inform you that your package has been sent back to 
+                        our warehouse facility. Packages are considered undeliverable and are often sent back due (but not limited) to incomplete/non-existent addresses, addresses 
+                        lacking forwarding information, or addresses that may be physically obstructed.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt9"><span>Where is my order shipped from?</span></h4>
+                <div class="moredata9">
+                    <p>All orders are shipped from our warehouse in Dayton, New Jersey.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt10"><span>Which carriers do you use?</span></h4>
+                <div class="moredata10">
+                    <p>We only deliver via USPS, FED-EX or DHL for standard shipping. Unfortunately, we cannot inform you immediately of the carrier that will deliver your order 
+                        if you select standard shipping for your order. This is because we now choose the most efficient shipping method for your package on a case-by-case basis to 
+                        ensure that you receive your package promptly.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt11"><span>Please tell me more about free shipping</span></h4>
+                <div class="moredata11">
+                    <p>We offer free shipping to the contiguous US on orders over $49 (before tax). Please note that orders qualifying for free shipping are shipped via Standard 
+                        shipping and may take up to 10 business days to arrive. </p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt12"><span>When I track my order it says "delivered" but I have not received it. What should I do?</span></h4>
+                <div class="moredata12">
+                    <p>Do not fret. From time to time carriers will mark packages as “delivered” when they arrive to their local sorting facility. Because of this, we ask that you 
+                        please allow the full 10 business days for your package to be delivered to you.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt13"><span>Why is my package delayed?</span></h4>
+                <div class="moredata13">
+                    <p>We are sorry to hear that your order is running behind. If the carrier is experiencing a delay, please check with the package's carrier for the latest updates on 
+                        your order status. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  <footer>
+        <div>
+            <ul>
+                <li>
+                    <strong>Safe &amp; Secure Payment</strong>
+                    <p>Our online payment system is operated 
+                        by a service provider specializing in secure 
+                        online payments.<span>For further information 
+                            please refer to the "payment" section of 
+                            our Terms and Conditions.</span></p>
+                </li>
+                <li>
+                    <strong>SHIPPING</strong>
+                    <p>Free standard shipping on all orders of $49+ 3 - 10 
+                        business days from receipt of your order. 
+                        <span>For an additional charge per address, 
+                            we can expedite delivery by FedEx to most 
+                            destinations in 2 - 3 business days.</span></p>
+                </li>
+                <li>
+                    <strong>CUSTOMER SERVICE</strong>
+                    <p>Need Help? Please call:  1-888-623-2880
+                        Monday - Friday 9AM - 11PM EST
+                        Saturday 10AM - 11PM EST</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <img src="images/logo_10.png" alt="welcome_to_loccitane">
+            </div>
+            <div>
+                <h2 class="morebt1">ABOUT US</h2>
+                <ul class="moredata1">
+                    <li><a href="footer_Cultivators_of_Change.html">Cultivators of Change</a></li>
+                    <li><a href="footer_LOccitane_Values.html">L'Occitane Values</a></li>
+                    <li><a href="footer_Sustainable_Beauty.html">Sustainable Beauty</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">L'OCCITANE Group</a></li>
+                    <li><a href="footer_Formulation_Charter.html">Formulation Charter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt2">AT YOUR SERVICE</h2>
+                <ul class="moredata2">
+                    <li><a href="https://www.google.com" class="application">1-888-623-2880</a></li>
+                    <li><a href="helpMainpage.html">Help and Contact</a></li>
+                    <li><a href="signIn.html">Order Tracking</a></li>
+                    <li><a href="footer_ReturnExchanges.html">Return &amp; Exchanges</a></li>
+                    <li><a href="helpMainpage.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt3">SOCIAL MEDIA</h2>
+                <ul class="moredata3">
+                    <li><a href="https://www.facebook.com/loccitaneusa" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/loccitane/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/loccitaneusa" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Cd7XUlv4NPE" target="_blank">Youtube</a></li>
+                </ul>
+                <ul>
+                    <li><a href="footer_Do_Not_Sell_MyInfoRequest–California_Residents.html#donotsell">Do Not Sell My Info Request – 
+                        California Residents</a></li>
+                    <li><a href="footer_SupplyChain_Transparency.html">Supply Chain Transparency</a></li>
+                    <li><a href="footer_TermsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">Investors</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 L’OCCITANE INTERNATIONAL SA. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

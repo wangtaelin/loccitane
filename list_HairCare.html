@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list_HairCare</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/loccitane.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel">
+        <div>
+            <p>MY BAG_</p>
+            <input type="button" value="close" class="closeButton">
+        </div>
+        <form action="mybag1.html" id="productin">
+            <div>
+                <div>
+                    <img src="images/cart_product.png" alt="cart_product">
+                </div>
+                <div>
+                    <b>Almond Delicious Hands</b>
+                    <small>Volume 1 oz</small>
+                    <div>
+                        <input type="button" class="minus" value="mi">
+                        <input type="text" value="1" id="counter">
+                        <input type="button" class="plus" value="pl"> 
+                    </div>
+                    <div>
+                        <strong>$13.00</strong>
+                        <input type="button" value="Remove" class="reMove">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Subtotal</p>
+                <strong>$13.00</strong>
+            </div>
+            <input type="submit" value="Checkout">
+        </form>
+        <div class="cartpanelEmpty">
+            <span>Your Bag is Empty</span>
+        </div>
+    </div>
+   <header>
+        <div>
+            <nav>
+                <div>
+                    <input type="button" class="menuopenbt" value="open">
+                    <div class="menupanel">
+                        <input type="button" class="menuclosebt" value="close">
+                        <ul>
+                            <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                            <li><a href="list_new.html">NEW & BEST</a></li>
+                            <li>
+                                <span>various CARE</span>
+                                <ol>
+                                    <li><a href="list_Skincare.html">Skincare</a></li>
+                                    <li><a href="list_HandCare.html">Hand Care</a></li>
+                                    <li>
+                                        <span>Body Care</span>
+                                        <ul>
+                                            <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                            <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                            <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                            <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                            <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="list_HairCare.html">Hair Care</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                            <li><a href="signIn.html">ACCOUNT</a></li>
+                            <li><a href="helpMainpage.html">HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                    <li><a href="list_new.html">NEW &amp; BEST</a></li>
+                    <li data-hover="hoverMenu">
+                        <span>various CARE</span>
+                        <ol>
+                            <li><a href="list_Skincare.html">Skincare</a></li>
+                            <li><a href="list_HandCare.html">Hand Care</a></li>
+                            <li>
+                                <span>Body Care</span>
+                                <ul>
+                                    <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                    <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                    <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                    <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                    <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="list_HairCare.html">Hair Care</a></li>
+                            <li><img src="images/gnb.png" alt="productimages"></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="welcome to loccitane"></a>
+                </h1>
+                <ul>
+                    <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                    <li><a href="signIn.html">ACCOUNT</a></li>
+                    <li><a href="helpMainpage.html">HELP</a></li>
+                    <li>
+                        <input type="button" value="cartButton" class="cartButton" data-panel="cartPanel">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="listcontainer">
+        <div id="filterPanel">
+            <div>
+                <strong>FILTER PRODUCTS</strong>
+                <input type="button" value="close" class="closeButton">
+            </div>
+            <div>
+                <span>PRODUCT TYPES</span>
+                <ol>
+                    <li>
+                        <button type="button" id="conditioner">Conditioner (15)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="refills">Refills (8)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="shampoo">Shampoo (15)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="solidhaircare">Solid Hair Care (1)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="treatment">Treatment (9)</button>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Various Care</a></li>
+                <li>HairCare</li>
+            </ol>
+        </nav>
+        <h2>HairCare_</h2>
+        <div>
+            <input type="button" value="Filter by" data-panel="filterPanel" class="openButton">
+            <select>
+                <option>Sort by</option>
+                <option>Best Seller</option>
+                <option>New In</option>
+            </select>
+        </div>
+        <ul>
+            <li>
+                <a href="detail_almondConditioner_2400_HairCare.html">
+                    <img src="images/almondConditioner_2400.png" alt="AlmondConditioner_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_almondConditioner_2400_HairCare.html">Almond Conditioner</a>
+                    <small>Volume 8.1 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondShampoo_2400_HairCare.html">
+                    <img src="images/almondShampoo_2400.png" alt="AlmondShampoo_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_almondShampoo_2400_HairCare.html">Almond Shampoo</a>
+                    <small>Normal - 8.1 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_almondShampoo_950_HairCare.html">
+                    <img src="images/almondShampoo_950.png" alt="AlmondShampoo_9.50">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_almondShampoo_950_HairCare.html">Almond Shampoo</a>
+                    <small>Small - 2.5 fl. oz</small>
+                    <strong>$9.50</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_citrusVerbenaFreshShampoo_2400_HairCare.html">
+                    <img src="images/citrusVerbenaFreshShampoo_2400.png" alt="CitrusVerbenaFreshShampoo_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_citrusVerbenaFreshShampoo_2400_HairCare.html">Citrus Verbena Fresh Shampoo</a>
+                    <small>Normal - 8.4 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_roseConditioner_2400_HairCare.html">
+                    <img src="images/roseConditioner_2400.png" alt="RoseConditioner_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_roseConditioner_2400_HairCare.html">Rose Conditioner</a>
+                    <small>Normal - 8.1 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_intensiveRepairShampoo_2800_HairCare.html">
+                    <img src="images/intensiveRepairShampoo_2800.png" alt="IntensiveRepairShampoo_28.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_intensiveRepairShampoo_2800_HairCare.html">Intensive Repair Shampoo</a>
+                    <small>Normal - 10.1 fl. oz</small>
+                    <strong>$28.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_citrusVerbenaFreshConditioner_2400_HairCare.html">
+                    <img src="images/citrusVerbenaFreshConditioner_2400.png" alt="CitrusVerbenaFreshConditioner_24.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_citrusVerbenaFreshConditioner_2400_HairCare.html">Citrus Verbena Fresh Conditioner</a>
+                    <small>Volume 8.4 fl. oz</small>
+                    <strong>$24.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieIntensiveRepairEnrichedInfusedOil_4200_HairCare.html">
+                    <img src="images/aromachologieIntensiveRepairEnrichedInfusedOil_4200.png" alt="AromachologieIntensiveRepairEnrichedInfusedOil_42.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieIntensiveRepairEnrichedInfusedOil_4200_HairCare.html">Aromachologie Intensive Repair Enriched Infused Oil</a>
+                    <small>Normal - 3.3 fl.oz</small>
+                    <strong>$42.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieGentle&BalanceMicellarShampoo_950_HairCare.html">
+                    <img src="images/aromachologieGentle&BalanceMicellarShampoo_950.png" alt="AromachologieGentle&BalanceMicellarShampoo_9.50">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieGentle&BalanceMicellarShampoo_950_HairCare.html">Aromachologie Gentle & Balance Micellar Shampoo</a>
+                    <small>Small - 2.5 fl.oz</small>
+                    <strong>$9.50</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieIntensiveRepairAnti-FrizzSerum_3200_HairCare.html">
+                    <img src="images/aromachologieIntensiveRepairAnti-FrizzSerum_3200.png" alt="AromachologieIntensiveRepairAnti-FrizzSerum_32.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieIntensiveRepairAnti-FrizzSerum_3200_HairCare.html">Aromachologie Intensive Repair Anti-Frizz Serum</a>
+                    <small>Normal - 3.3 fl. oz</small>
+                    <strong>$32.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieGentle&BalanceMicellarShampoo_4000_HairCare.html">
+                    <img src="images/aromachologieGentle&BalanceMicellarShampoo_4000.png" alt="AromachologieGentle&BalanceMicellarShampoo_40.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieGentle&BalanceMicellarShampoo_4000_HairCare.html">Aromachologie Gentle & Balance Micellar Shampoo</a>
+                    <small>Large - 16.9 fl.oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieGentle&BalanceMicellarShampooRefill_3600_HairCare.html">
+                    <img src="images/aromachologieGentle&BalanceMicellarShampooRefill_3600.png" alt="AromachologieGentle&BalanceMicellarShampooRefill_36.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieGentle&BalanceMicellarShampooRefill_3600_HairCare.html">Aromachologie Gentle & Balance Micellar Shampoo Refill</a>
+                    <small>Refill - 16.9 fl. oz</small>
+                    <strong>$36.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieGentle&BalanceConditioner_2800_HairCare.html">
+                    <img src="images/aromachologieGentle&BalanceConditioner_2800.png" alt="AromachologieGentle&BalanceConditioner_28.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieGentle&BalanceConditioner_2800_HairCare.html">Aromachologie Gentle & Balance Conditioner</a>
+                    <small>Normal - 8.4 fl.oz</small>
+                    <strong>$28.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieNourishingCareConditionerRefill_4000_HairCare.html">
+                    <img src="images/aromachologieNourishingCareConditionerRefill_4000.png" alt="AromachologieNourishingCareConditionerRefill_40.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieNourishingCareConditionerRefill_4000_HairCare.html">Aromachologie Nourishing Care Conditioner Refill</a>
+                    <small>Refill - 16.9 fl.oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_intensiveRepairSolidConditioner_2000_HairCare.html">
+                    <img src="images/intensiveRepairSolidConditioner_2000.png" alt="IntensiveRepairSolidConditioner_20.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_intensiveRepairSolidConditioner_2000_HairCare.html">Intensive Repair Solid Conditioner</a>
+                    <small>Normal - 1.4 oz</small>
+                    <strong>$20.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologiePurifyingFreshnessConditionerRefill_4000_HairCare.html">
+                    <img src="images/aromachologiePurifyingFreshnessConditionerRefill_4000.png" alt="AromachologiePurifyingFreshnessConditionerRefill_40.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologiePurifyingFreshnessConditionerRefill_4000_HairCare.html">Aromachologie Purifying Freshness Conditioner Refill</a>
+                    <small>Refill - 16.9 fl. oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologiePurifyingFreshnessConditioner_2800_HairCare.html">
+                    <img src="images/aromachologiePurifyingFreshnessConditioner_2800.png" alt="AromachologiePurifyingFreshnessConditioner_28.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologiePurifyingFreshnessConditioner_2800_HairCare.html">Aromachologie Purifying Freshness Conditioner</a>
+                    <small>Normal - 8.4 fl.oz</small>
+                    <strong>$28.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieGentle&BalanceMicellarShampoo_2800_HairCare.html">
+                    <img src="images/aromachologieGentle&BalanceMicellarShampoo_2800.png" alt="AromachologieGentle&BalanceMicellarShampoo_28.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieGentle&BalanceMicellarShampoo_2800_HairCare.html">Aromachologie Gentle & Balance Micellar Shampoo</a>
+                    <small>Normal - 10.1 fl. oz</small>
+                    <strong>$28.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologiePurifyingFreshnessConditioner_4400_HairCare.html">
+                    <img src="images/aromachologiePurifyingFreshnessConditioner_4400.png" alt="AromachologiePurifyingFreshnessConditioner_44.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologiePurifyingFreshnessConditioner_4400_HairCare.html">Aromachologie Purifying Freshness Conditioner</a>
+                    <small>Large - 16.9 fl. oz</small>
+                    <strong>$44.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologiePurifyingFreshnessShampoo_2800_HairCare.html">
+                    <img src="images/aromachologiePurifyingFreshnessShampoo_2800.png" alt="AromachologiePurifyingFreshnessShampoo_28.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologiePurifyingFreshnessShampoo_2800_HairCare.html">Aromachologie Purifying Freshness Shampoo</a>
+                    <small>Normal - 10.1 fl. oz</small>
+                    <strong>$28.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologiePurifyingFreshnessShampoo_4000_HairCare.html">
+                    <img src="images/aromachologiePurifyingFreshnessShampoo_4000.png" alt="AromachologiePurifyingFreshnessShampoo_40.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_aromachologiePurifyingFreshnessShampoo_4000_HairCare.html">Aromachologie Purifying Freshness Shampoo</a>
+                    <small>Large - 16.9 fl.oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieGentle&BalanceConditionerRefill_4000_HairCare.html">
+                    <img src="images/aromachologieGentle&BalanceConditionerRefill_4000.png" alt="AromachologieGentle&BalanceConditionerRefill_40.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieGentle&BalanceConditionerRefill_4000_HairCare.html">Aromachologie Gentle & Balance Conditioner Refill</a>
+                    <small>Refill - 16.9 fl. oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologiePurifyingFreshnessShampooRefill_3600_HairCare.html">
+                    <img src="images/aromachologiePurifyingFreshnessShampooRefill_3600.png" alt="AromachologiePurifyingFreshnessShampooRefill_36.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologiePurifyingFreshnessShampooRefill_3600_HairCare.html">Aromachologie Purifying Freshness Shampoo Refill</a>
+                    <small>Refill - 16.9 fl. oz</small>
+                    <strong>$36.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologiePurifyingFreshnessShampoo_950_HairCare.html">
+                    <img src="images/aromachologiePurifyingFreshnessShampoo_950.png" alt="AromachologiePurifyingFreshnessShampoo_9.50">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologiePurifyingFreshnessShampoo_950_HairCare.html">Aromachologie Purifying Freshness Shampoo</a>
+                    <small>Small - 2.5 fl. oz</small>
+                    <strong>$9.50</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieVolume&StrengthConditioner_4400_HairCare.html">
+                    <img src="images/aromachologieVolume&StrengthConditioner_4400.png" alt="AromachologieVolume&StrengthConditioner_44.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieVolume&StrengthConditioner_4400_HairCare.html">Aromachologie Volume & Strength Conditioner</a>
+                    <small>Normal - 16.9 fl. oz</small>
+                    <strong>$44.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieVolume&StrengthConditioner_2800_HairCare.html">
+                    <img src="images/aromachologieVolume&StrengthConditioner_2800.png" alt="AromachologieVolume&StrengthConditioner_28.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieVolume&StrengthConditioner_2800_HairCare.html">Aromachologie Volume & Strength Conditioner</a>
+                    <small>Normal - 8.4 fl. oz</small>
+                    <strong>$28.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieVolume&StrengthShampoo_4000_HairCare.html">
+                    <img src="images/aromachologieVolume&StrengthShampoo_4000.png" alt="AromachologieVolume&StrengthShampoo_40.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieVolume&StrengthShampoo_4000_HairCare.html">Aromachologie Volume & Strength Shampoo</a>
+                    <small>Large - 16.9 fl. oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieVolume&StrengthShampooRefill_3600_HairCare.html">
+                    <img src="images/aromachologieVolume&StrengthShampooRefill_3600.png" alt="AromachologieVolume&StrengthShampooRefill_36.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_aromachologieVolume&StrengthShampooRefill_3600_HairCare.html">Aromachologie Volume & Strength Shampoo Refill</a>
+                    <small>Refill - 16.9 fl. oz</small>
+                    <strong>$36.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_aromachologieVolume&StrengthShampoo_2800_HairCare.html">
+                    <img src="images/aromachologieVolume&StrengthShampoo_2800.png" alt="AromachologieVolume&StrengthShampoo_28.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_aromachologieVolume&StrengthShampoo_2800_HairCare.html">Aromachologie Volume & Strength Shampoo</a>
+                    <small>Normal - 10.1 fl. oz</small>
+                    <strong>$28.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_gelCreamHairMask-SOSMoisture_1500_HairCare.html">
+                    <img src="images/gelCreamHairMask-SOSMoisture_1500.png" alt="GelCreamHairMask-SOSMoisture_15.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_gelCreamHairMask-SOSMoisture_1500_HairCare.html">Gel Cream Hair Mask - SOS Moisture</a>
+                    <small>Normal - 1.7 oz</small>
+                    <strong>$15.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_gentle&BalanceSolidShampoo_1800_HairCare.html">
+                    <img src="images/gentle&BalanceSolidShampoo_1800.png" alt="Gentle&BalanceSolidShampoo_18.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_gentle&BalanceSolidShampoo_1800_HairCare.html">Gentle & Balance Solid Shampoo</a>
+                    <small>Normal - 2.1 oz</small>
+                    <strong>$18.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_lustrousHairMask-SOSShine_1500_HairCare.html">
+                    <img src="images/lustrousHairMask-SOSShine_1500.png" alt="LustrousHairMask-SOSShine_15.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_lustrousHairMask-SOSShine_1500_HairCare.html">Lustrous Hair Mask - SOS Shine</a>
+                    <small>Normal - 1.7 oz</small>
+                    <strong>$15.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_intensiveRepairConditionerRefill_4000_HairCare.html">
+                    <img src="images/intensiveRepairConditionerRefill_4000.png" alt="IntensiveRepairConditionerRefill_40.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_intensiveRepairConditionerRefill_4000_HairCare.html">Intensive Repair Conditioner Refill</a>
+                    <small>Refill - 16.9 fl. oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_intensiveRepairConditioner_2800_HairCare.html">
+                    <img src="images/intensiveRepairConditioner_2800.png" alt="IntensiveRepairConditioner_28.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_intensiveRepairConditioner_2800_HairCare.html">Intensive Repair Conditioner</a>
+                    <small>Normal - 8.4 fl. oz</small>
+                    <strong>$28.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_intensiveRepairConditioner_1000_HairCare.html">
+                    <img src="images/intensiveRepairConditioner_1000.png" alt="IntensiveRepairConditioner_1000">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_intensiveRepairConditioner_1000_HairCare.html">Intensive Repair Conditioner</a>
+                    <small>Small - 2.5 fl. oz</small>
+                    <strong>$10.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_intensiveRepairMask_4200_HairCare.html">
+                    <img src="images/intensiveRepairMask_4200.png" alt="IntensiveRepairMask_42.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_intensiveRepairMask_4200_HairCare.html">Intensive Repair Mask</a>
+                    <small>Normal - 7 oz</small>
+                    <strong>$42.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_intensiveRepairShampoo_4000_HairCare.html">
+                    <img src="images/intensiveRepairShampoo_4000.png" alt="IntensiveRepairShampoo_40.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_intensiveRepairShampoo_4000_HairCare.html">Intensive Repair Shampoo</a>
+                    <small>Large - 16.9 fl. oz</small>
+                    <strong>$40.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_lePetitRemèdeCosmeticBalm_1550_HairCare.html">
+                    <img src="images/lePetitRemèdeCosmeticBalm_1550.png" alt="LePetitRemèdeCosmeticBalm_15.50">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_lePetitRemèdeCosmeticBalm_1550_HairCare.html">Le Petit Remède Cosmetic Balm</a>
+                    <small>Normal - 0.5 oz</small>
+                    <strong>$15.50</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_intensiveRepairShampoo_950_HairCare.html">
+                    <img src="images/intensiveRepairShampoo_950.png" alt="IntensiveRepairShampoo_9.50">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_intensiveRepairShampoo_950_HairCare.html">Intensive Repair Shampoo</a>
+                    <small>Small - 2.5 fl. oz</small>
+                    <strong>$9.50</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_purifyingFreshnessDryShampooMist_2800_HairCare.html">
+                    <img src="images/purifyingFreshnessDryShampooMist_2800.png" alt="PurifyingFreshnessDryShampooMist_28.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_purifyingFreshnessDryShampooMist_2800_HairCare.html">Purifying Freshness Dry Shampoo Mist</a>
+                    <small>Normal - 2.7 fl. oz</small>
+                    <strong>$28.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_intensiveRepairShampooRefill_3600_HairCare.html">
+                    <img src="images/intensiveRepairShampooRefill_3600.png" alt="IntensiveRepairShampooRefill_36.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_intensiveRepairShampooRefill_3600_HairCare.html">Intensive Repair Shampoo Refill</a>
+                    <small>Refill - 16.9 fl. oz</small>
+                    <strong>$36.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_scalpNightSerum_4200_HairCare.html">
+                    <img src="images/scalpNightSerum_4200.png" alt="ScalpNightSerum_42.00">
+                </a>
+                <div>
+                    <mark class="newIn">new in</mark>
+                    <a href="detail_scalpNightSerum_4200_HairCare.html">Scalp Night Serum</a>
+                    <small>Normal - 1.6 fl. oz</small>
+                    <strong>$42.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_purifyingFreshnessRebalancingScalpSerum_3600_HairCare.html">
+                    <img src="images/purifyingFreshnessRebalancingScalpSerum_3600.png" alt="PurifyingFreshnessRebalancingScalpSerum_36.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_purifyingFreshnessRebalancingScalpSerum_3600_HairCare.html">Purifying Freshness Rebalancing Scalp Serum</a>
+                    <small>Volume 2.5 fl. oz</small>
+                    <strong>$36.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+        </ul>
+    </div>
+ <footer>
+        <div>
+            <ul>
+                <li>
+                    <strong>Safe &amp; Secure Payment</strong>
+                    <p>Our online payment system is operated 
+                        by a service provider specializing in secure 
+                        online payments.<span>For further information 
+                            please refer to the "payment" section of 
+                            our Terms and Conditions.</span></p>
+                </li>
+                <li>
+                    <strong>SHIPPING</strong>
+                    <p>Free standard shipping on all orders of $49+ 3 - 10 
+                        business days from receipt of your order. 
+                        <span>For an additional charge per address, 
+                            we can expedite delivery by FedEx to most 
+                            destinations in 2 - 3 business days.</span></p>
+                </li>
+                <li>
+                    <strong>CUSTOMER SERVICE</strong>
+                    <p>Need Help? Please call:  1-888-623-2880
+                        Monday - Friday 9AM - 11PM EST
+                        Saturday 10AM - 11PM EST</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <img src="images/logo_10.png" alt="welcome_to_loccitane">
+            </div>
+            <div>
+                <h2 class="morebt1">ABOUT US</h2>
+                <ul class="moredata1">
+                    <li><a href="footer_Cultivators_of_Change.html">Cultivators of Change</a></li>
+                    <li><a href="footer_LOccitane_Values.html">L'Occitane Values</a></li>
+                    <li><a href="footer_Sustainable_Beauty.html">Sustainable Beauty</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">L'OCCITANE Group</a></li>
+                    <li><a href="footer_Formulation_Charter.html">Formulation Charter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt2">AT YOUR SERVICE</h2>
+                <ul class="moredata2">
+                    <li><a href="https://www.google.com" class="application">1-888-623-2880</a></li>
+                    <li><a href="helpMainpage.html">Help and Contact</a></li>
+                    <li><a href="signIn.html">Order Tracking</a></li>
+                    <li><a href="footer_ReturnExchanges.html">Return &amp; Exchanges</a></li>
+                    <li><a href="helpMainpage.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt3">SOCIAL MEDIA</h2>
+                <ul class="moredata3">
+                    <li><a href="https://www.facebook.com/loccitaneusa" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/loccitane/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/loccitaneusa" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Cd7XUlv4NPE" target="_blank">Youtube</a></li>
+                </ul>
+                <ul>
+                    <li><a href="footer_Do_Not_Sell_MyInfoRequest–California_Residents.html#donotsell">Do Not Sell My Info Request – 
+                        California Residents</a></li>
+                    <li><a href="footer_SupplyChain_Transparency.html">Supply Chain Transparency</a></li>
+                    <li><a href="footer_TermsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">Investors</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 L’OCCITANE INTERNATIONAL SA. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

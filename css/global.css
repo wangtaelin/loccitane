@@ -1,0 +1,1277 @@
+body{
+    background-color: #f5f3ef;
+}
+.cartPanel strong,
+.cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > input:nth-of-type(2),
+body > div:first-of-type > form > div:first-of-type > div:last-of-type > div:last-of-type p,
+body > div:first-of-type > form > div:nth-of-type(2) span,
+.indexcontainer > div:nth-of-type(3) > div:last-of-type ul li > span,
+.indexcontainer > div:nth-of-type(3) > div:last-of-type ul li p:last-of-type,
+.listcontainer > ul > li > div > strong,
+.newIn,
+.bestSeller,
+.detailcontainer > div:first-of-type > div:last-of-type > b,
+.detailcontainer > div:first-of-type > div:last-of-type > strong,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > p,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > b
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > span,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > p+span,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > ul li,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > b,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > ol > li,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > ol > li > small,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > div > ul li,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > small+span,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > span,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:last-of-type > small,
+.detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > span,
+.detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > ul > li > div,
+.detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > input,
+.detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > p,
+.detailcontainer > div:nth-of-type(2) > div:last-of-type > p,
+.detailcontainer > div:nth-of-type(2) > div:last-of-type > span,
+.footerReturnExchanges > div:first-of-type > div > div > strong,
+.mybag > form > div > ul > li > div > div > div > input:nth-of-type(2),
+.mybag > form > div > ul > li > div > div > strong,
+.mybag > form > div > div:last-of-type > ul > li:not(:nth-of-type(2)) > strong,
+.shippingfirst > .shippingsecnd > div > ul > li > strong,
+.shippingfirst > .paymentgo > div:last-of-type > ul > li > strong,
+.payment > .pay > div:last-of-type ul li strong,
+.helpmainpage > div:nth-of-type(2) > ul > li > a,
+.accounthistory > div:last-of-type > ul:last-of-type > li > div:first-of-type > span,
+.accounthistory > div:last-of-type > ul:last-of-type > li > div:last-of-type > strong,
+.helpdetail > a,
+.helpquestion > a{
+    font-family: 'Work Sans';
+}
+.cartPanel b,
+.cartPanel > div:last-of-type div:first-of-type > ul:last-of-type > li > input,
+#filterPanel > div:last-of-type ol li button,
+body > div:first-of-type > form > div:first-of-type > div:last-of-type h3,
+header > div > nav > ul > li a,
+header > div > nav > ul > li > span,
+header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li span,
+body > div:first-of-type > form > div:first-of-type > div:last-of-type > div:last-of-type > input,
+body > div:first-of-type > form > div:nth-of-type(2) p,
+footer > div:first-of-type ul li p,
+footer > div:last-of-type > div ul li a,
+footer > p,
+.indexcontainer > div:first-of-type > div:last-of-type,
+.indexcontainer > div:nth-of-type(2) > div:last-of-type p,
+.indexcontainer > div:nth-of-type(2) > div:last-of-type a,
+.indexcontainer > div:nth-of-type(3) > div:first-of-type ul li input,
+.indexcontainer > div:nth-of-type(3) > div:first-of-type p,
+.indexcontainer > div:nth-of-type(3) > div:last-of-type ul li h3 a,
+.indexcontainer > div:nth-of-type(3) > div:last-of-type ul li .toBag,
+.indexcontainer > div:nth-of-type(4) > div:first-of-type p,
+.indexcontainer > div:nth-of-type(4) > div:last-of-type a,
+.indexcontainer > div:last-of-type > div:first-of-type > div a:last-of-type,
+.indexcontainer > div:last-of-type > div:last-of-type a:last-of-type,
+.listcontainer > nav ol li,
+.listcontainer >  p,
+.listcontainer > div:nth-of-type(2) h3,
+.listcontainer > div:nth-of-type(2) ul li a,
+.listcontainer > div:last-of-type input,
+.listcontainer > div:last-of-type select,
+.listcontainer > ul > li > div > a,
+.listcontainer > ul > li:hover > div > input,
+.listcontainer > ul > li > div > input,
+.detailcontainer > nav ol li,
+.detailcontainer > div:first-of-type > div:last-of-type > h2,
+.detailcontainer > div:first-of-type > div:last-of-type > h2+p,
+.detailcontainer > div:first-of-type > div:last-of-type > p:last-of-type,
+.detailcontainer > div:nth-of-type(2) > ul > li > input,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > small,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > div:first-of-type > em,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > .tb > table > caption,
+.detailcontainer > div:nth-of-type(2) > div:first-of-type > .tb > table > tbody > tr > td,
+.detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > h3,
+.detailcontainer > figure > figcaption,
+.footerformulationCharter > div:nth-of-type(2) > ul > li > p,
+.footerformulationCharter > div:nth-of-type(2) > ul > li > small,
+.footerformulationCharter > div:last-of-type > ul > li > figure > figcaption > dl,
+.footerLOccitaneValues > div:last-of-type > ul > li > figure > figcaption > dl > dd,
+.footerLOccitaneValues > div:last-of-type > div > div > p,
+.footerSustainableBeauty > div:nth-of-type(2) > div > p,
+.footerSustainableBeauty > section:first-of-type > ul > li > figure > figcaption > dl,
+.footerSustainableBeauty > div:nth-of-type(3) > ul > li > div > p,
+.footerSustainableBeauty > div:last-of-type > ul > li > p,
+.footerReturnExchanges > div:first-of-type > p,
+.footerReturnExchanges > div:first-of-type > small,
+.footerReturnExchanges > div:first-of-type > span,
+.footerReturnExchanges > div:first-of-type > .returnbox > input:not(:last-of-type),
+.footerReturnExchanges > div:first-of-type > div > div > h3,
+.footerReturnExchanges > div:first-of-type > a,
+.footersupplyChainTransparency > ul > li > p,
+.footerCultivatorsofChange > div:nth-child(odd) > div > p,
+.footerCultivatorsofChange > div:nth-of-type(2) > div > ul > li,
+.footerCultivatorsofChange > div:last-of-type > ul > li > figure > figcaption > dl > dd,
+.footerTermsConditions > div:last-of-type > div > p,
+.footerTermsConditions > div:last-of-type > div > strong,
+.footerTermsConditions > div:last-of-type > div > span,
+.footerTermsConditions > div:last-of-type > div > ul li,
+.footerTermsConditions > div:last-of-type > div > ol li,
+.footerTermsConditions > div:last-of-type address,
+.footerTermsConditions > div:last-of-type div:nth-of-type(5) div,
+.mybag > form > div > ul > li > div > a,
+.mybag > form > div > ul > li > div > div > input,
+.mybag > form > div > div:last-of-type > ul > li > span,
+.mybag > form > div > div:last-of-type > ul > li:nth-of-type(2) > b,
+.mybagempty > p,
+.mybagempty > a,
+.shippingfirst > .shippingsecnd > div > ul > li > span,
+.shippingfirst b,
+.shippingfirst > .shippingsecnd > ul > li > label,
+.shippingfirst > .shippingsecnd > ul > li:nth-of-type(5) > input::placeholder,
+.shippingfirst span,
+.shippingfirst .paymentgo div:first-of-type address,
+.payment > .pay > div:last-of-type ul li span,
+.payment > .pay > div:last-of-type > ul > li:nth-of-type(2) > b,
+.payment > .pay > div,
+.payment > .pay > div:first-of-type > div > ul > li > input::placeholder,
+.confirm a,
+.signIn > div:last-of-type > div > p,
+.signIn > div:last-of-type > div input:not(:last-of-type),
+.signIn > div:last-of-type > div a,
+.helpmainpage > div:first-of-type > div:last-of-type,
+.helpmainpage > div:last-of-type > div a,
+[class^="account"] > div:nth-of-type(2) > form > ul > li,
+[class^="account"] > div:nth-of-type(2) > ul > li:not(:last-of-type),
+[class^="account"] > div:nth-of-type(2) > form > ul > li input::placeholder,
+[class^="account"] > div:nth-of-type(2) p,
+[class^="account"] > div span,
+.accountInformation2 > div > form > ul > li,
+.accountpayment3 > div:nth-of-type(2),
+.account_changepassword > div:last-of-type a,
+.accountaddress3 > div:last-of-type > .addresspanel > div > div,
+.accounthistory > div:last-of-type > ul:first-of-type > li > strong,
+.accounthistory > div:last-of-type > ul:last-of-type > li > div:nth-of-type(2) > a,
+.accountrecurringorders2 > div:last-of-type,
+.helpdetail > div,
+.helpquestion > div,
+header > div > nav > div > div{
+    font-family: 'Source Serif 4';
+}
+body > div:first-of-type > div:first-of-type p,
+body > div:first-of-type > form > div:first-of-type > div:last-of-type span:first-of-type,
+body > div:first-of-type > form > input,
+footer > div:first-of-type ul li strong,
+footer > div:last-of-type > div h2,
+.cartPanel  small,
+.cartpanelEmpty > span,
+#filterPanel > div:first-of-type strong,
+#filterPanel > div:last-of-type span,
+.indexcontainer > div:nth-of-type(3) > div:first-of-type h2,
+.indexcontainer > div:nth-of-type(3) > div:last-of-type ul li p:first-of-type,
+.indexcontainer > div:nth-of-type(4) > div:first-of-type h2,
+.indexcontainer > div:last-of-type h2,
+.listcontainer > h2,
+.listcontainer > ul > li > div > small,
+.listcontainer > div:nth-of-type(2) strong,
+.detailcontainer > div:first-of-type > div:last-of-type > span,
+.detailcontainer > div:first-of-type > div:last-of-type > small,
+.detailcontainer > div:first-of-type > div:last-of-type > input,
+.footerformulationCharter > div > h2,
+.footerformulationCharter > div:nth-of-type(2) > ul > li > h3,
+.footerLOccitaneValues > div:first-of-type h2,
+.footerLOccitaneValues > div:last-of-type > ul > li > figure > figcaption > dl > dt,
+.footerLOccitaneValues > div:last-of-type > div > div > b,
+.footerSustainableBeauty > div:first-of-type > h2,
+.footerSustainableBeauty > div:nth-of-type(2) > div > b,
+.footerSustainableBeauty > section:first-of-type h3,
+.footerSustainableBeauty > div:nth-of-type(3) > ul > li > div > strong,
+.footerSustainableBeauty > div:last-of-type > h3,
+.footerReturnExchanges > div:first-of-type > h2,
+.footerReturnExchanges > div:first-of-type > .returnbox > input:last-of-type,
+.footerReturnExchanges > div:first-of-type > div > div > small,
+.footersupplyChainTransparency > h2,
+.footersupplyChainTransparency > ul > li > h3,
+.footerCultivatorsofChange > div:nth-child(odd) > div > h2,
+.footerCultivatorsofChange > div:nth-child(even) strong,
+.footerCultivatorsofChange > div:last-of-type > ul > li > figure > figcaption > dl > dt,
+.footerTermsConditions > h2,
+.footerTermsConditions > div:first-of-type > ul > li > a,
+.footerTermsConditions > div:last-of-type > div > h3,
+.mybag > ol > li,
+.mybag h2,
+.mybag h3,
+.mybag > form > div > ul > li > div > small,
+.mybag > form > div > div > h3,
+.mybag > form > div > div > ul > li:last-of-type > input,
+.shippingfirst > ol > li,
+.shippingfirst > .shippingsecnd > div > h3,
+.shippingfirst input[type=submit],
+.shippingfirst  h3,
+.payment > ol > li,
+.payment > .pay > div:first-of-type > h3,
+.payment > .pay > div:last-of-type h3,
+.payment > .pay > div:last-of-type > ul > li > input[type=submit],
+.confirm h2,
+.confirm p,
+.signIn > div:last-of-type > div > h2,
+.signIn > div:last-of-type > div input:last-of-type,
+[class^="account"] > div:first-of-type,
+[class^="account"] > div:nth-of-type(2) h2,
+[class^="account"] > div:nth-of-type(2) a,
+.accountpayment3 > div:nth-of-type(2) > div:first-of-type > h2,
+.accountaddress3 > div:last-of-type > .xbuttonpanel strong,
+.helpmainpage > div:not(:first-of-type) h2,
+.helpmainpage > div:last-of-type > div h3,
+.helpdetail > h2,
+.helpquestion > h2{
+    font-family: 'Lisu Bosa';
+}
+body::after{
+    display: block; clear: both; content: '';
+}
+input{
+    border-radius: 0%;
+}
+.bestSeller{
+    font-size: 12px; font-weight: 500;
+    color: #614a04;
+    border: 1px solid #614a04; padding: 6px 8px;
+    display: block; width: 98px; text-align: center;
+    margin-bottom: 15px;
+    background-color: #f5f3ef;
+    font-style: normal;
+}
+.newIn{
+    font-size: 12px; font-weight: 400;
+    color: #ffffff;
+    background-color: #8d8b29;
+    display: block; width: 68px; text-align: center;
+    margin-bottom: 15px;
+    padding:6px 0; text-transform: uppercase;
+    font-style: normal;
+}
+.noBeNe{
+   padding-top: 40px;
+}
+.volumeNo{
+    padding-top: 42px;
+}
+[class^='hidden']{
+    display: none;
+}
+[class^='hidden'].active{
+    display: block;
+}
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+    background: none;
+}
+.beige{
+    background-color: #a4907c;
+}
+.brown{
+    background-color: #614a04;
+}
+.green{
+    background-color: #757422;
+}
+[id$='Panel']{
+    display: none;
+}
+[id$='Panel'].active{
+    display: block;
+}
+input[type="text"],
+input[type="password"],
+input[type="tel"]{
+    padding: 18px 20px;
+}
+
+@media screen and (max-width: 767px){
+    .cartPanel{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1200; 
+    width:90%;
+    display: none;
+    /* max-width: 520px;  */
+    border: 1px solid #dfdcd6;
+    padding: 25px 10px;
+    background-color:#f5f3ef;
+    box-sizing: border-box;
+    }
+    .cartPanel > div:first-of-type{
+        display: flex; justify-content:space-between;
+    }
+    .cartpanelEmpty{
+        display: none;
+    }
+    .cartpanelEmpty > span{
+        font-size: 16px; font-weight: 400;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        padding:70px 0 200px 0;
+    }
+    .cartPanel > div:first-of-type input{
+        border: none;
+        background:url('../images/x.png')no-repeat center;
+        text-indent: -9999px;
+        display: block; width: 20px;
+    }
+    .cartPanel > p{
+        font-size: 16px; font-weight: 400;
+    }
+    .cartPanel > form > div:first-of-type::after{
+        display: block; clear: both; content: '';
+    }
+    .cartPanel > form > div:first-of-type > div:first-of-type{
+        float: left; width: 15.38%;
+    }
+    .cartPanel > form > div:first-of-type > div:first-of-type img{
+        max-width: 80px;
+        margin-top: 20px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type{
+        float: left; width: 73.07%; margin-top: 35px;
+        margin-left: 11.55%;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type b{
+        font-size: 12px; font-weight: 400; margin-bottom: 25px;
+        display: block;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > small{
+        font-size: 12px; font-weight: 400; display: block; margin-bottom: 25px;
+        color: #8d8d8d;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type{
+        margin-bottom: 25px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > button{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        width: 20px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > input:not(:nth-of-type(2)){
+        border: none;
+        color: transparent;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > input:first-of-type{
+        background: url('../images/minus.png')no-repeat center; width: 10px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > input:nth-of-type(2){
+        background-color: #f5f3ef; border:1px solid #dfdcd6; 
+        width: 20px; padding:3px 8px ; font-size:16px; text-align: center;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > input:last-of-type{
+       background: url('../images/plus.png')no-repeat center; width: 10px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:last-of-type{
+        display: flex; justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:last-of-type strong{
+        font-size: 14px; font-weight: 400;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:last-of-type > input{
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none; font-size: 12px; font-weight: 400;
+        border-bottom: 1px solid #000000;
+    }
+    .cartPanel > form > div:nth-of-type(2){
+        display: flex; justify-content: space-between; margin-bottom: 30px;
+        border-top: 1px solid #dfdcd6;
+        border-bottom: 1px solid #dfdcd6; padding: 15px 0;
+    }
+    .cartPanel > form > div:nth-of-type(2) p{
+        font-size: 12px; font-weight: 400;
+    }
+    .cartPanel > form > div:nth-of-type(2) strong{
+        font-size: 14px; font-weight: 400; 
+    }
+    .cartPanel > form > input{
+        border: none; background-color: #ffcb00; 
+        box-sizing: border-box;
+        width: 100%;
+        padding: 14px 0; font-size: 14px; font-weight: 400;
+        color: #000000;
+    }
+    /* header > div, */
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol
+    /* footer > div:first-of-type > ul, */
+    /* footer > div:last-of-type, */
+    /* .indexcontainer > div:first-of-type, */
+    /* .indexcontainer > div:nth-of-type(4), */
+    /* .indexcontainer > div:last-of-type, */
+    /* .listcontainer, */
+    /* .detailcontainer > nav, */
+    /* .detailcontainer > div:first-of-type, */
+    /* .detailcontainer > div:nth-of-type(2), */
+    /* .footerformulationCharter > div:not(:first-of-type), */
+    /* .footerSustainableBeauty > section,
+    .footerSustainableBeauty > div:nth-of-type(3),
+    .footerSustainableBeauty > div:last-of-type, */
+    /* .footerReturnExchanges, */
+    /* .footersupplyChainTransparency, */
+    /* .footerCultivatorsofChange > div:nth-of-type(2), */
+    /* .footerTermsConditions, */
+    /* .mybag, */
+    /* .shippingfirst, */
+    /* .payment, */
+    /* .helpmainpage > div:nth-of-type(2),
+    .helpmainpage > div:last-of-type, */
+    /* .helpdetail, */
+    /* .helpquestion */
+    {
+        max-width: 720px; margin: 0 auto;
+    }
+    header{
+        border-top: 14px solid #ffcb00;
+        position: fixed; 
+        width: 100%; background-color: #f5f3ef;
+        z-index: 1000;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    header > div > nav{
+        display: flex; justify-content: space-between;
+        position: relative;
+    }
+    header > div > nav > div > input{
+        background: url('../images/menu.png')left no-repeat;
+        line-height: 85px;
+        border: none; 
+        width: 24px;
+        padding:0;
+        color: transparent;
+    }
+    header > div > nav > div > div{
+        position: fixed;
+        top: 14px;
+        left: 0;
+        z-index: 999;
+        margin: 0 auto;
+        background-color: #f5f3ef;
+        display: none;
+        width: 100%;
+    }
+    header > div > nav > div > div > input{
+        background: url('../images/close_small.png')right no-repeat;
+        display: block;
+        border: none;
+        position: absolute; right: 4%; top: 20px;
+        color: transparent;
+    }
+    header > div > nav > div > div > ul{
+        padding:25px 10px 120px;
+        box-sizing: border-box;
+    }
+    header > div > nav > div > div > ul::after{
+        display: block; clear: both; content: '';
+    }
+    header > div > nav > div > div > ul > li{
+        margin-bottom: 30px;
+    }
+    header > div > nav > div > div > ul > li > a,
+    header > div > nav > div > div > ul > li > span{
+        display: block; text-decoration: none;
+        color: #000000; text-transform: uppercase;
+        font-size: 14px;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3)::after{
+        display: block; clear: both; content: '';
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3){
+        width: 100%;
+    }
+    /* header > div > nav > div > div > nav > ul > li:nth-of-type(3) > span{
+        float: left;
+        width: 16.66%;
+    } */
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol{
+        /* float: left;
+        width: 70.27%;
+        margin: 5px 0 0 13.07%; */
+        margin:20px 20px 50px;
+        list-style: none;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li > a{
+        display: block; text-decoration: none;
+        color: #000000; font-size: 14px;
+        font-style: italic;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li:nth-of-type(3) span{
+        display: block; 
+        padding-bottom: 15px;
+        font-style: italic;
+        font-size: 14px;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li:nth-of-type(3) > ul > li:not(:last-of-type){
+        margin-bottom: 15px;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li:nth-of-type(3) > ul > li > a{
+        display: block; text-decoration: none; color: #000000;
+        font-size: 13px; 
+        line-height: 16px;
+    }
+    header > div > nav > h1{
+        max-width: 120px; 
+    }
+    header > div > nav > h1 a{
+        display: block; padding: 25px 0;
+    }
+    header > div > nav > h1 a img{
+        width: 100%;
+    }
+    /* header > div > nav > ul{
+        display: flex; justify-content: space-between;
+    } */
+    header > div > nav > ul:first-of-type{
+        display: none;
+    }
+    header > div > nav > ul > li{
+        /* line-height: 25px;  */
+        padding: 20px 0;
+    }
+    header > div > nav > ul:last-of-type > li:not(:last-of-type){
+        display: none;
+    }
+    header > div > nav > ul > li a{
+        text-decoration: none; color: black; display: block;
+        font-size: 18px; font-weight: 400;
+    }
+    header > div > nav > ul > li > span{
+        font-size: 18px; font-weight: 400; text-transform: uppercase;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"] > ol{
+        position: absolute; background-color: #f5f3ef; z-index: 1; width: 100%;
+        left: 0; top: 90px;  
+        opacity: 0; height: 0; transition: all .35s ease-out;
+        display: none;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol{
+        opacity: 1; 
+        height: 370px; 
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:not(:last-of-type){
+        width: 17.23%;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:last-of-type{
+        width: 426px;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:not(:nth-of-type(3)) a,
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:nth-of-type(3) span{
+        font-size: 18px; font-style: italic;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:nth-of-type(3) ul{
+        padding-top: 10px; width: 210px;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:nth-of-type(3) ul > li a{
+        font-size: 14px; font-weight: 400; line-height: 20px; margin-bottom: 25px;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:last-of-type img{
+        width: 100%;
+    }
+    header > div > nav > ul:last-of-type > li:last-of-type input{
+        border: none;
+        background: url('../images/cart.png')no-repeat center;
+        display: block; text-indent: -9999px;
+        line-height: 50px; width: 18px;
+    }
+    /* ! */
+    footer{
+        margin-top: 160px;
+    }
+    footer > div:first-of-type{
+        /* border-top: 1px solid #cdcac5; */
+        border-bottom: 0.5px solid #cdcac5;
+    }
+    footer > div:first-of-type ul{
+        /* display: flex; justify-content: space-between;
+        padding: 40px 24px;
+        box-sizing: border-box;
+        max-width: 720px; margin: 0 auto; */
+        display: none;
+    }
+    /* footer > div:first-of-type ul li{
+        display: block; text-align: center; 
+        width: 29.16%;
+    } */
+    /* footer > div:first-of-type ul li:nth-of-type(2){
+        width: 24%;
+    } */
+    /* footer > div:first-of-type ul li strong{
+        font-size: 18px; font-weight: 500; margin-bottom: 35px;
+        display: block; text-transform: uppercase;
+    }
+    footer > div:first-of-type ul li p{
+        line-height: 22px; font-size: 14px;
+    }
+    footer > div:first-of-type ul li p > span{
+        display: none;
+    } */
+    footer > div:last-of-type > div{
+        /* display: flex; justify-content: space-between; */
+        padding:40px 10px 0;
+    }
+    footer > div:last-of-type > div:first-of-type{
+        display: none;
+    }
+    /* footer > div:last-of-type > div{
+        width: 29%;
+    } */
+    footer > div:last-of-type > div h2{
+        font-size: 16px; font-weight: 500; font-style: italic;
+        background-image: url('../images/help_expandmore.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+        cursor: pointer;
+        padding-bottom: 20px;
+    }
+    footer > div:last-of-type > div h2.active{
+        background: url('../images/help_expandless.png')right top no-repeat;
+    }
+    footer > div:last-of-type > div > ul{
+        display: none;
+    }
+    footer > div:last-of-type > div:last-of-type  > ul:last-of-type{
+        display: block;
+    }
+    footer > div:last-of-type > div ul li{
+        display: block;
+    }
+    footer > div:last-of-type > div ul li:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    /* footer > div:last-of-type > div:last-of-type ul::after{
+        display: block; clear: both; content: '';
+    } */
+    /* footer > div:last-of-type > div:last-of-type h2{
+        text-align: center;
+    } */
+    /* footer > div:last-of-type > div:last-of-type ul:first-of-type{
+        padding-bottom: 35px;
+        border-bottom: 1px solid #cdcac5;
+        text-align: center;
+    } */
+    /* footer > div:last-of-type > div:last-of-type ul:first-of-type li{
+        float: left; width: 50%;
+        margin-bottom: 15px;
+    } */
+    footer > div:last-of-type > div:last-of-type ul:last-of-type{
+        padding-top: 30px;
+    }
+    footer > div:last-of-type > div:last-of-type ul:last-of-type li{
+        margin-bottom: 20px;
+    }
+    footer > div:last-of-type > div ul li a{
+        text-decoration: none; 
+        color: #000000;
+        font-size: 14px;
+    }
+    footer > div:last-of-type > div ul li:hover a{
+        color: #757575;
+    }
+    footer > div:last-of-type > div:last-of-type ul:last-of-type li a{
+        line-height: 16px;
+    }
+    footer > p{ 
+        padding:20px 10px 30px;
+        color: #616161;
+        font-size: 12px;
+    }
+}   
+/* !mobile */
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    /* header > div, */
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol
+    /* footer > div:first-of-type > ul, */
+    /* footer > div:last-of-type, */
+    /* .indexcontainer > div:first-of-type, */
+    /* .indexcontainer > div:nth-of-type(4), */
+    /* .indexcontainer > div:last-of-type, */
+    /* .listcontainer, */
+    /* .detailcontainer > nav, */
+    /* .detailcontainer > div:first-of-type, */
+    /* .detailcontainer > div:nth-of-type(2), */
+    /* .footerformulationCharter > div:not(:first-of-type), */
+    /* .footerSustainableBeauty > section,
+    .footerSustainableBeauty > div:nth-of-type(3),
+    .footerSustainableBeauty > div:last-of-type, */
+    /* .footerReturnExchanges, */
+    /* .footersupplyChainTransparency, */
+    /* .footerCultivatorsofChange > div:nth-of-type(2), */
+    /* .footerTermsConditions, */
+    /* .mybag, */
+    /* .shippingfirst, */
+    /* .payment, */
+    /* .helpmainpage > div:nth-of-type(2),
+    .helpmainpage > div:last-of-type, */
+    /* .helpdetail, */
+    /* .helpquestion */
+    {
+        max-width: 720px; margin: 0 auto;
+    }
+    header{
+        border-top: 14px solid #ffcb00;
+        position: fixed; 
+        width: 100%; background-color: #f5f3ef;
+        z-index: 1000;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+    header > div > nav{
+        display: flex; justify-content: space-between;
+        position: relative;
+    }
+    header > div > nav > div > input{
+        background: url('../images/menu.png')left no-repeat;
+        line-height: 85px;
+        border: none; 
+        width: 24px;
+        padding:0;
+        color: transparent;
+    }
+    header > div > nav > div > div{
+        position: fixed;
+        top: 14px;
+        left: 0;
+        z-index: 999;
+        margin: 0 auto;
+        background-color: #f5f3ef;
+        display: none;
+        width: 60%;
+    }
+    header > div > nav > div > div > input{
+        background: url('../images/x.png')right no-repeat;
+        display: block;
+        border: none;
+        width: 20px;
+        position: absolute; right: 4%; top: 20px;
+        color: transparent;
+    }
+    header > div > nav > div > div > ul{
+        padding:50px 24px 120px;
+        box-sizing: border-box;
+    }
+    header > div > nav > div > div > ul::after{
+        display: block; clear: both; content: '';
+    }
+    header > div > nav > div > div > ul > li{
+        margin-bottom: 40px;
+    }
+    header > div > nav > div > div > ul > li > a,
+    header > div > nav > div > div > ul > li > span{
+        display: block; text-decoration: none;
+        color: #000000; text-transform: uppercase;
+        font-size: 16px;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3)::after{
+        display: block; clear: both; content: '';
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3){
+        width: 100%;
+    }
+    /* header > div > nav > div > div > nav > ul > li:nth-of-type(3) > span{
+        float: left;
+        width: 16.66%;
+    } */
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol{
+        /* float: left;
+        width: 70.27%;
+        margin: 5px 0 0 13.07%; */
+        margin:20px 30px 50px;
+        list-style: none;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li > a{
+        display: block; text-decoration: none;
+        color: #000000; font-size: 16px;
+        font-style: italic;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li:nth-of-type(3) span{
+        display: block; 
+        padding-bottom: 15px;
+        font-style: italic;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li:nth-of-type(3) > ul > li:not(:last-of-type){
+        margin-bottom: 15px;
+    }
+    header > div > nav > div > div > ul > li:nth-of-type(3) > ol > li:nth-of-type(3) > ul > li > a{
+        display: block; text-decoration: none; color: #000000;
+        font-size: 14px; 
+    }
+    header > div > nav > h1{
+        max-width: 130px; 
+    }
+    header > div > nav > h1 a{
+        display: block; padding: 25px 0;
+    }
+    header > div > nav > h1 a img{
+        width: 100%;
+    }
+    /* header > div > nav > ul{
+        display: flex; justify-content: space-between;
+    } */
+    header > div > nav > ul:first-of-type{
+        display: none;
+    }
+    header > div > nav > ul > li{
+        /* line-height: 25px;  */
+        padding: 20px 0;
+    }
+    header > div > nav > ul:last-of-type > li:not(:last-of-type){
+        display: none;
+    }
+    header > div > nav > ul > li a{
+        text-decoration: none; color: black; display: block;
+        font-size: 18px; font-weight: 400;
+    }
+    header > div > nav > ul > li > span{
+        font-size: 18px; font-weight: 400; text-transform: uppercase;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"] > ol{
+        position: absolute; background-color: #f5f3ef; z-index: 1; width: 100%;
+        left: 0; top: 90px;  
+        opacity: 0; height: 0; transition: all .35s ease-out;
+        display: none;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol{
+        opacity: 1; 
+        height: 370px; 
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:not(:last-of-type){
+        width: 17.23%;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:last-of-type{
+        width: 426px;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:not(:nth-of-type(3)) a,
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:nth-of-type(3) span{
+        font-size: 18px; font-style: italic;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:nth-of-type(3) ul{
+        padding-top: 10px; width: 210px;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:nth-of-type(3) ul > li a{
+        font-size: 14px; font-weight: 400; line-height: 20px; margin-bottom: 25px;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:last-of-type img{
+        width: 100%;
+    }
+    header > div > nav > ul:last-of-type > li:last-of-type input{
+        border: none;
+        background: url('../images/cart.png')no-repeat center;
+        display: block; text-indent: -9999px;
+        line-height: 50px; width: 18px;
+    }
+    /* ! */
+    footer{
+        margin-top: 205px;
+    }
+    footer > div:first-of-type{
+        border-top: 1px solid #cdcac5;
+        border-bottom: 1px solid #cdcac5;
+    }
+    footer > div:first-of-type ul{
+        display: flex; justify-content: space-between;
+        padding: 40px 24px;
+        box-sizing: border-box;
+        /* max-width: 720px; margin: 0 auto; */
+    }
+    footer > div:first-of-type ul li{
+        display: block; text-align: center; 
+        width: 29.16%;
+    }
+    /* footer > div:first-of-type ul li:nth-of-type(2){
+        width: 24%;
+    } */
+    footer > div:first-of-type ul li strong{
+        font-size: 18px; font-weight: 500; margin-bottom: 35px;
+        display: block; text-transform: uppercase;
+    }
+    footer > div:first-of-type ul li p{
+        line-height: 22px; font-size: 14px;
+    }
+    footer > div:first-of-type ul li p > span{
+        display: none;
+    }
+    footer > div:last-of-type{
+        display: flex; justify-content: space-between;
+        padding:45px 24px 40px;
+    }
+    footer > div:last-of-type > div:first-of-type{
+        display: none;
+    }
+    footer > div:last-of-type > div:not(:last-of-type){
+        text-align: center;
+    }
+    footer > div:last-of-type > div{
+        width: 29%;
+    }
+    footer > div:last-of-type > div h2{
+        font-size: 18px; font-weight: 500; font-style: italic;
+        margin-bottom: 35px;
+    }
+    footer > div:last-of-type > div ul li{
+        display: block;
+    }
+    footer > div:last-of-type > div:not(:last-of-type) ul li{
+        margin-bottom: 30px;
+    }
+    footer > div:last-of-type > div:last-of-type ul::after{
+        display: block; clear: both; content: '';
+    }
+    footer > div:last-of-type > div:last-of-type h2{
+        text-align: center;
+    }
+    footer > div:last-of-type > div:last-of-type ul:first-of-type{
+        padding-bottom: 5px;
+        border-bottom: 1px solid #cdcac5;
+        text-align: center;
+    }
+    footer > div:last-of-type > div:last-of-type ul:first-of-type li{
+        float: left; width: 50%;
+        margin-bottom: 15px;
+    }
+    footer > div:last-of-type > div:last-of-type ul:last-of-type{
+        padding-top: 20px;
+    }
+    footer > div:last-of-type > div:last-of-type ul:last-of-type li{
+        margin-bottom: 20px;
+    }
+    footer > div:last-of-type > div ul li a{
+        text-decoration: none; 
+        color: #000000;
+    }
+    footer > div:last-of-type > div ul li:hover a{
+        color: #757575;
+    }
+    footer > div:last-of-type > div:last-of-type ul:last-of-type li a{
+        line-height: 16px;
+    }
+    footer > p{ 
+        padding:0 24px 30px;
+        color: #616161;
+        font-size: 12px;
+    }
+}   
+/* !tablet */
+@media screen and (min-width:1280px){
+    header > div,
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol,
+    footer > div:first-of-type > ul,
+    footer > div:last-of-type,
+    .indexcontainer > div:first-of-type,
+    .indexcontainer > div:nth-of-type(4),
+    .indexcontainer > div:last-of-type,
+    .listcontainer,
+    .detailcontainer > nav,
+    .detailcontainer > div:first-of-type,
+    .detailcontainer > div:nth-of-type(2),
+    .footerformulationCharter > div:not(:first-of-type),
+    .footerSustainableBeauty > section,
+    .footerSustainableBeauty > div:nth-of-type(3),
+    .footerSustainableBeauty > div:last-of-type,
+    .footerReturnExchanges,
+    .footersupplyChainTransparency,
+    .footerCultivatorsofChange > div:nth-of-type(2),
+    .footerTermsConditions,
+    .mybag,
+    .shippingfirst,
+    .payment,
+    .helpmainpage > div:nth-of-type(2),
+    .helpmainpage > div:last-of-type,
+    .helpdetail,
+    .helpquestion,
+    [class^="account"]{
+        max-width: 1380px; margin: 0 auto;
+    }
+    header{
+        border-top: 14px solid #ffcb00;
+        position: fixed; 
+        width: 100%; background-color: #f5f3ef;
+        z-index: 1000;
+    }
+    header > div > nav{
+        display: flex; justify-content: space-between;
+        position: relative;
+    }
+    header > div > nav > div{
+        display: none;
+    }
+    header > div > nav > ul{
+        margin: 0; min-width: 420px;
+    }
+    header > div > nav > h1{
+        max-width: 165px;
+    }
+    header > div > nav > h1 a{
+        display: block; padding: 25px 0;
+    }
+    header > div > nav > h1 a img{
+        width: 100%;
+    }
+    header > div > nav > ul{
+        display: flex; justify-content: space-between;
+    }
+    header > div > nav > ul > li{
+        line-height: 50px; padding: 25px 0;
+    }
+    header > div > nav > ul > li a{
+        text-decoration: none; color: black; display: block;
+        font-size: 18px; font-weight: 400;
+    }
+    header > div > nav > ul > li > span{
+        font-size: 18px; font-weight: 400; text-transform: uppercase;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"] > ol{
+        position: absolute; background-color: #f5f3ef; z-index: 1; width: 100%;
+        left: 0; top: 90px;  
+        opacity: 0; height: 0; transition: all .35s ease-out;
+        display: none;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol{
+        opacity: 1; 
+        height: 370px; 
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:not(:last-of-type){
+        width: 17.23%;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:last-of-type{
+        width: 426px;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:not(:nth-of-type(3)) a,
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:nth-of-type(3) span{
+        font-size: 18px; font-style: italic;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:nth-of-type(3) ul{
+        padding-top: 10px; width: 210px;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:nth-of-type(3) ul > li a{
+        font-size: 14px; font-weight: 400; line-height: 20px; margin-bottom: 25px;
+    }
+    header > div > nav > ul:first-of-type > li[data-hover="hoverMenu"]:hover > ol > li:last-of-type img{
+        width: 100%;
+    }
+    header > div > nav > ul:last-of-type > li:last-of-type input{
+        border: none;
+        background: url('../images/cart.png')no-repeat center;
+        display: block; text-indent: -9999px;
+        line-height: 50px; width: 18px;
+
+    }
+    /* ! */
+    footer{
+        margin-top: 300px;
+    }
+    footer > div:first-of-type{
+        border-top: 1px solid #cdcac5;
+        border-bottom: 1px solid #cdcac5;
+    }
+    footer > div:first-of-type ul{
+        display: flex; justify-content: space-between;
+        padding: 40px 0;
+    }
+    footer > div:first-of-type ul li{
+        display: block; text-align: center; 
+        width: 24%;
+    }
+    footer > div:first-of-type ul li:nth-of-type(2){
+        width: 24%;
+    }
+    footer > div:first-of-type ul li strong{
+        font-size: 22px; font-weight: 500; margin-bottom: 45px;
+        display: block; text-transform: uppercase;
+    }
+    footer > div:first-of-type ul li p{
+        line-height: 22px; font-size: 15px;
+    }
+    footer > div:last-of-type{
+        padding-top: 80px;
+    }
+    footer > div:last-of-type{
+        display: flex; justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    footer > div:last-of-type > div:not(:last-of-type){
+        text-align: center;
+    }
+    footer > div:last-of-type > div:last-of-type{
+        width: 15.21%;
+    }
+    footer > div:last-of-type > div h2{
+        font-size: 22px; font-weight: 500; font-style: italic;
+        margin-bottom: 35px;
+    }
+    footer > div:last-of-type > div ul li{
+        display: block;
+    }
+    footer > div:last-of-type > div:not(:last-of-type) ul li{
+        margin-bottom: 30px;
+    }
+    footer > div:last-of-type > div:last-of-type ul::after{
+        display: block; clear: both; content: '';
+    }
+    footer > div:last-of-type > div:last-of-type h2{
+        text-align: center;
+    }
+    footer > div:last-of-type > div:last-of-type ul:first-of-type{
+        padding-bottom: 35px;
+        border-bottom: 1px solid #cdcac5;
+    }
+    footer > div:last-of-type > div:last-of-type ul:first-of-type li{
+        float: left; width: 50%;
+        margin-bottom: 20px;
+    }
+    footer > div:last-of-type > div:last-of-type ul:last-of-type{
+        padding-top: 20px;
+    }
+    footer > div:last-of-type > div:last-of-type ul:last-of-type li{
+        margin-bottom: 20px;
+    }
+    footer > div:last-of-type > div ul li a{
+        text-decoration: none; 
+        color: #000000;
+    }
+    footer > div:last-of-type > div ul li:hover a{
+        color: #757575;
+    }
+    footer > div:last-of-type > div:last-of-type ul:last-of-type li a{
+        line-height: 16px;
+    }
+    footer > p{ 
+        max-width: 1380px; margin: 0 auto 40px;
+        color: #616161;
+    }
+}   
+/* !desktop */
+
+@media screen and (min-width:768px) {
+    .cartPanel{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1200; 
+        width:100%;
+        display: none;
+        max-width: 520px; 
+        border: 1px solid #dfdcd6;
+        padding: 35px 30px;
+        background-color: #f5f3ef;
+    }
+    .cartPanel > div:first-of-type{
+        display: flex; justify-content:space-between;
+    }
+    .cartpanelEmpty{
+        display: none;
+    }
+    .cartpanelEmpty > span{
+        font-size: 18px; font-weight: 400;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        padding:70px 0 370px 0;
+    }
+    .cartPanel > div:first-of-type input{
+        border: none;
+        background:url('../images/x.png')no-repeat center;
+        text-indent: -9999px;
+        display: block; width: 20px;
+    }
+    .cartPanel > p{
+        font-size: 18px; font-weight: 400;
+    }
+    .cartPanel > form > div:first-of-type::after{
+        display: block; clear: both; content: '';
+    }
+    .cartPanel > form > div:first-of-type > div:first-of-type{
+        float: left; width: 30%;
+    }
+    .cartPanel > form > div:first-of-type > div:first-of-type img{
+        width: 200px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type{
+        float: right; width: 60%; margin-top: 35px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type b{
+        font-size: 18px; font-weight: 400; margin-bottom: 20px;
+        display: block;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > small{
+        font-size: 15px; font-weight: 400; display: block; margin-bottom: 30px;
+        color: #8d8d8d;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type{
+        margin-bottom: 30px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > button{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        width: 20px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > input:not(:nth-of-type(2)){
+        border: none;
+        color: transparent;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > input:first-of-type{
+        background: url('../images/minus.png')no-repeat center; width: 20px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > input:nth-of-type(2){
+        background-color: #f5f3ef; border:1px solid #dfdcd6; 
+        width: 40px; padding:8px 10px ; font-size: 20px; text-align: center;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:first-of-type > input:last-of-type{
+       background: url('../images/plus.png')no-repeat center; width: 20px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:last-of-type{
+        display: flex; justify-content: space-between;
+        margin-bottom: 55px;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:last-of-type strong{
+        font-size: 18px; font-weight: 400;
+    }
+    .cartPanel > form > div:first-of-type > div:last-of-type > div:last-of-type > input{
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none; font-size: 14px; font-weight: 400;
+        border-bottom: 1px solid #000000;
+    }
+    .cartPanel > form > div:nth-of-type(2){
+        display: flex; justify-content: space-between; margin-bottom: 30px;
+        border-top: 1px solid #dfdcd6;
+        border-bottom: 1px solid #dfdcd6; padding: 20px 0;
+    }
+    .cartPanel > form > div:nth-of-type(2) p{
+        font-size: 16px; font-weight: 400;
+    }
+    .cartPanel > form > div:nth-of-type(2) strong{
+        font-size: 18px; font-weight: 400; 
+    }
+    .cartPanel > form > input{
+        border: none; background-color: #ffcb00; width: 520px;
+        padding: 14px 0; font-size: 18px; font-weight: 400;
+        color: #000000;
+    }
+}
+/* ! tablet & desktop */

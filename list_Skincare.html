@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list_Skincare</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/loccitane.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel">
+        <div>
+            <p>MY BAG_</p>
+            <input type="button" value="close" class="closeButton">
+        </div>
+        <form action="mybag1.html" id="productin">
+            <div>
+                <div>
+                    <img src="images/cart_product.png" alt="cart_product">
+                </div>
+                <div>
+                    <b>Almond Delicious Hands</b>
+                    <small>Volume 1 oz</small>
+                    <div>
+                        <input type="button" class="minus" value="mi">
+                        <input type="text" value="1" id="counter">
+                        <input type="button" class="plus" value="pl"> 
+                    </div>
+                    <div>
+                        <strong>$13.00</strong>
+                        <input type="button" value="Remove" class="reMove">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Subtotal</p>
+                <strong>$13.00</strong>
+            </div>
+            <input type="submit" value="Checkout">
+        </form>
+        <div class="cartpanelEmpty">
+            <span>Your Bag is Empty</span>
+        </div>
+    </div>
+   <header>
+        <div>
+            <nav>
+                <div>
+                    <input type="button" class="menuopenbt" value="open">
+                    <div class="menupanel">
+                        <input type="button" class="menuclosebt" value="close">
+                        <ul>
+                            <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                            <li><a href="list_new.html">NEW & BEST</a></li>
+                            <li>
+                                <span>various CARE</span>
+                                <ol>
+                                    <li><a href="list_Skincare.html">Skincare</a></li>
+                                    <li><a href="list_HandCare.html">Hand Care</a></li>
+                                    <li>
+                                        <span>Body Care</span>
+                                        <ul>
+                                            <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                            <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                            <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                            <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                            <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="list_HairCare.html">Hair Care</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                            <li><a href="signIn.html">ACCOUNT</a></li>
+                            <li><a href="helpMainpage.html">HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                    <li><a href="list_new.html">NEW &amp; BEST</a></li>
+                    <li data-hover="hoverMenu">
+                        <span>various CARE</span>
+                        <ol>
+                            <li><a href="list_Skincare.html">Skincare</a></li>
+                            <li><a href="list_HandCare.html">Hand Care</a></li>
+                            <li>
+                                <span>Body Care</span>
+                                <ul>
+                                    <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                    <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                    <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                    <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                    <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="list_HairCare.html">Hair Care</a></li>
+                            <li><img src="images/gnb.png" alt="productimages"></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="welcome to loccitane"></a>
+                </h1>
+                <ul>
+                    <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                    <li><a href="signIn.html">ACCOUNT</a></li>
+                    <li><a href="helpMainpage.html">HELP</a></li>
+                    <li>
+                        <input type="button" value="cartButton" class="cartButton" data-panel="cartPanel">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="listcontainer">
+        <div id="filterPanel">
+            <div>
+                <strong>FILTER PRODUCTS</strong>
+                <input type="button" value="close" class="closeButton">
+            </div>
+            <div>
+                <span>PRODUCT TYPES</span>
+                <ol>
+                    <li>
+                        <button type="button" id="cleanser">Cleanser (2)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="eyecare">Eye Care (1)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="exfoliatingscrubs">Exfoliating Scrubs (1)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="moisturizer">Moisturizer (5)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="oil">Oil (1)</button>
+                    </li>
+                    <li>
+                        <button type="button" id="serum">Serum (2)</button>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Various Care</a></li>
+                <li>Skincare</li>
+            </ol>
+        </nav>
+        <h2>Skincare_</h2>
+        <p>
+            Enriched with natural-origin ingredients, our high-performance skincare formulas specialize in anti-aging, 
+            hydration, brightening, and nourishment.
+        </p>
+        <div>
+            <input type="button" value="Filter by" data-panel="filterPanel" class="openButton">
+            <select>
+                <option>Sort by</option>
+                <option>Best Seller</option>
+                <option>New In</option>
+            </select>
+        </div>
+        <ul>
+            <li>
+                <a href="detail_immortelleDivineActivatingLotion_6500_Skincare.html">
+                    <img src="images/immortelleDivineActivatingLotion_6500.png" alt="ImmortelleDivineActivatingLotion_65.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_immortelleDivineActivatingLotion_6500_Skincare.html">Immortelle Divine Activating Lotion</a>
+                    <small>Normal - 6.7 fl. oz</small>
+                    <strong>$65.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_immortelleDivineCleansingBalm_4900_Skincare.html">
+                    <img src="images/immortelleDivineCleansingBalm_4900.png" alt="ImmortelleDivineCleansingBalm_49.00">
+                </a>
+                <div>
+                    <mark class="newIn">new in</mark>
+                    <a href="detail_immortelleDivineCleansingBalm_4900_Skincare.html">Immortelle Divine Cleansing Balm</a>
+                    <small>Normal - 2.1 oz</small>
+                    <strong>$49.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_immortelle_Divine_Cream_Skincare.html">
+                    <img src="images/immortelle_Divine_Cream.png" alt="Immortelle_Divine_Cream">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_immortelle_Divine_Cream_Skincare.html">Immortelle Divine Cream</a>
+                    <small>Volume 1.7 oz</small>
+                    <strong>$115.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_immortelleDivineEyeBalm_9500_Skincare.html">
+                    <img src="images/immortelleDivineEyeBalm_9500.png" alt="ImmortelleDivineEyeBalm_95.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_immortelleDivineEyeBalm_9500_Skincare.html">Immortelle Divine Eye Balm</a>
+                    <small>Normal - 0.5 oz</small>
+                    <strong>$95.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_immortelleDivineSerum_12000_Skincare.html">
+                    <img src="images/immortelleDivineSerum_12000.png" alt="ImmortelleDivineSerum_120.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_immortelleDivineSerum_12000_Skincare.html">Immortelle Divine Serum</a>
+                    <small>Normal - 1 fl. oz</small>
+                    <strong>$120.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_immortelleDivineYouthOil_11500_Skincare.html">
+                    <img src="images/immortelleDivineYouthOil_11500.png" alt="ImmortelleDivineYouthOil_115.00">
+                </a>
+                <div>
+                    <mark class="newIn">new in</mark>
+                    <a href="detail_immortelleDivineYouthOil_11500_Skincare.html">Immortelle Divine Youth Oil</a>
+                    <small>Normal - 1 fl. oz</small>
+                    <strong>$115.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_reineBlancheTargetedDarkSpotNightCare_7000_Skincare.html">
+                    <img src="images/reineBlancheTargetedDarkSpotNightCare_7000.png" alt="ReineBlancheTargetedDarkSpotNightCare_70.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_reineBlancheTargetedDarkSpotNightCare_7000_Skincare.html">Reine Blanche Targeted Dark Spot Night Care</a>
+                    <small>Normal - 0.5 fl. oz</small>
+                    <strong>$70.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_reineBlancheCreamBrighteningMoisturizer_7500_Skincare.html">
+                    <img src="images/reineBlancheCreamBrighteningMoisturizer_7500.png" alt="ReineBlancheCreamBrighteningMoisturizer_75.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_reineBlancheCreamBrighteningMoisturizer_7500_Skincare.html">Reine Blanche Cream Brightening Moisturizer</a>
+                    <small>Normal - 1.7 oz</small>
+                    <strong>$75.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_reineBlancheGlow-RevealingExfoliatingMask_4500_Skincare.html">
+                    <img src="images/reineBlancheGlow-RevealingExfoliatingMask_4500.png" alt="ReineBlancheGlow-RevealingExfoliatingMask_45.00">
+                </a>
+                <div>
+                    <mark class="bestSeller">BEST SELLER</mark>
+                    <a href="detail_reineBlancheGlow-RevealingExfoliatingMask_4500_Skincare.html">Reine Blanche Glow-Revealing Exfoliating Mask</a>
+                    <small>Normal - 2.6 oz</small>
+                    <strong>$45.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_reineBlancheIntenseIlluminatingFoam_3600_Skincare.html">
+                    <img src="images/reineBlancheIntenseIlluminatingFoam_3600.png" alt="ReineBlancheIntenseIlluminatingFoam_36.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_reineBlancheIntenseIlluminatingFoam_3600_Skincare.html">Reine Blanche Intense Illuminating Foam</a>
+                    <small>Volume 5 fl. oz</small>
+                    <strong>$36.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_reineBlancheRichCreamBrighteningUltra-Moisturizer_7500_Skincare.html">
+                    <img src="images/reineBlancheRichCreamBrighteningUltra-Moisturizer_7500.png" alt="ReineBlancheRichCreamBrighteningUltra-Moisturizer_75.00">
+                </a>
+                <div class="noBeNe">
+                    <a href="detail_reineBlancheRichCreamBrighteningUltra-Moisturizer_7500_Skincare.html">Reine Blanche Rich Cream Brightening Ultra-Moisturizer</a>
+                    <small>Normal - 1.7 oz</small>
+                    <strong>$75.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+            <li>
+                <a href="detail_reineBlancheSerumBrighteningConcentrate_8500_Skincare.html">
+                    <img src="images/reineBlancheSerumBrighteningConcentrate_8500.png" alt="ReineBlancheSerumBrighteningConcentrate_85.00">
+                </a>    
+                <div class="noBeNe">
+                    <a href="detail_reineBlancheSerumBrighteningConcentrate_8500_Skincare.html">Reine Blanche Serum Brightening Concentrate</a>
+                    <small>Volume 1 fl.oz</small>
+                    <strong>$85.00</strong>
+                    <input type="button" class="toBag cartButton" value="ADD TO BAG">
+                </div>
+            </li>
+        </ul>
+    </div>
+ <footer>
+        <div>
+            <ul>
+                <li>
+                    <strong>Safe &amp; Secure Payment</strong>
+                    <p>Our online payment system is operated 
+                        by a service provider specializing in secure 
+                        online payments.<span>For further information 
+                            please refer to the "payment" section of 
+                            our Terms and Conditions.</span></p>
+                </li>
+                <li>
+                    <strong>SHIPPING</strong>
+                    <p>Free standard shipping on all orders of $49+ 3 - 10 
+                        business days from receipt of your order. 
+                        <span>For an additional charge per address, 
+                            we can expedite delivery by FedEx to most 
+                            destinations in 2 - 3 business days.</span></p>
+                </li>
+                <li>
+                    <strong>CUSTOMER SERVICE</strong>
+                    <p>Need Help? Please call:  1-888-623-2880
+                        Monday - Friday 9AM - 11PM EST
+                        Saturday 10AM - 11PM EST</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <img src="images/logo_10.png" alt="welcome_to_loccitane">
+            </div>
+            <div>
+                <h2 class="morebt1">ABOUT US</h2>
+                <ul class="moredata1">
+                    <li><a href="footer_Cultivators_of_Change.html">Cultivators of Change</a></li>
+                    <li><a href="footer_LOccitane_Values.html">L'Occitane Values</a></li>
+                    <li><a href="footer_Sustainable_Beauty.html">Sustainable Beauty</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">L'OCCITANE Group</a></li>
+                    <li><a href="footer_Formulation_Charter.html">Formulation Charter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt2">AT YOUR SERVICE</h2>
+                <ul class="moredata2">
+                    <li><a href="https://www.google.com" class="application">1-888-623-2880</a></li>
+                    <li><a href="helpMainpage.html">Help and Contact</a></li>
+                    <li><a href="signIn.html">Order Tracking</a></li>
+                    <li><a href="footer_ReturnExchanges.html">Return &amp; Exchanges</a></li>
+                    <li><a href="helpMainpage.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt3">SOCIAL MEDIA</h2>
+                <ul class="moredata3">
+                    <li><a href="https://www.facebook.com/loccitaneusa" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/loccitane/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/loccitaneusa" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Cd7XUlv4NPE" target="_blank">Youtube</a></li>
+                </ul>
+                <ul>
+                    <li><a href="footer_Do_Not_Sell_MyInfoRequest–California_Residents.html#donotsell">Do Not Sell My Info Request – 
+                        California Residents</a></li>
+                    <li><a href="footer_SupplyChain_Transparency.html">Supply Chain Transparency</a></li>
+                    <li><a href="footer_TermsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">Investors</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 L’OCCITANE INTERNATIONAL SA. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help_myorder</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/loccitane.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel">
+        <div>
+            <p>MY BAG_</p>
+            <input type="button" value="close" class="closeButton">
+        </div>
+        <form action="mybag1.html" id="productin">
+            <div>
+                <div>
+                    <img src="images/cart_product.png" alt="cart_product">
+                </div>
+                <div>
+                    <b>Almond Delicious Hands</b>
+                    <small>Volume 1 oz</small>
+                    <div>
+                        <input type="button" class="minus" value="mi">
+                        <input type="text" value="1" id="counter">
+                        <input type="button" class="plus" value="pl"> 
+                    </div>
+                    <div>
+                        <strong>$13.00</strong>
+                        <input type="button" value="Remove" class="reMove">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Subtotal</p>
+                <strong>$13.00</strong>
+            </div>
+            <input type="submit" value="Checkout">
+        </form>
+        <div class="cartpanelEmpty">
+            <span>Your Bag is Empty</span>
+        </div>
+    </div>
+   <header>
+        <div>
+            <nav>
+                <div>
+                    <input type="button" class="menuopenbt" value="open">
+                    <div class="menupanel">
+                        <input type="button" class="menuclosebt" value="close">
+                        <ul>
+                            <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                            <li><a href="list_new.html">NEW & BEST</a></li>
+                            <li>
+                                <span>various CARE</span>
+                                <ol>
+                                    <li><a href="list_Skincare.html">Skincare</a></li>
+                                    <li><a href="list_HandCare.html">Hand Care</a></li>
+                                    <li>
+                                        <span>Body Care</span>
+                                        <ul>
+                                            <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                            <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                            <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                            <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                            <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="list_HairCare.html">Hair Care</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                            <li><a href="signIn.html">ACCOUNT</a></li>
+                            <li><a href="helpMainpage.html">HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="list_GiftsForAll.html">GIFTS</a></li>
+                    <li><a href="list_new.html">NEW &amp; BEST</a></li>
+                    <li data-hover="hoverMenu">
+                        <span>various CARE</span>
+                        <ol>
+                            <li><a href="list_Skincare.html">Skincare</a></li>
+                            <li><a href="list_HandCare.html">Hand Care</a></li>
+                            <li>
+                                <span>Body Care</span>
+                                <ul>
+                                    <li><a href="list_Irresistible_AlmondCollection.html">Irresistible Almond Collection</a></li>
+                                    <li><a href="list_Moisturize_SkinWithNature-InfusedLotion.html">Moisturize Skin With Nature-Infused Lotion</a></li>
+                                    <li><a href="list_Premium_BodyCare_WithBenefits.html">Premium Body Care With Benefits</a></li>
+                                    <li><a href="list_Daily_Body_Moisturizers.html">Daily Body Moisturizers</a></li>
+                                    <li><a href="list_Shower+Bath_Essentials.html">Shower + Bath Essentials</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="list_HairCare.html">Hair Care</a></li>
+                            <li><img src="images/gnb.png" alt="productimages"></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="welcome to loccitane"></a>
+                </h1>
+                <ul>
+                    <li><a href="footer_Cultivators_of_Change.html">ABOUT US</a></li>
+                    <li><a href="signIn.html">ACCOUNT</a></li>
+                    <li><a href="helpMainpage.html">HELP</a></li>
+                    <li>
+                        <input type="button" value="cartButton" class="cartButton" data-panel="cartPanel">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="helpdetail">
+        <h2>HOW CAN I HELP YOU TODAY</h2>
+        <a href="helpMainpage.html">Back</a>
+        <div>
+            <h3>MY ORDER</h3>
+            <div>
+                <h4 class="morebt1"><span>How do I know my order was successfully placed?</span></h4>
+                <div class="moredata1">
+                    <p>You will receive an email in your inbox confirming your order. Additionally, your payment method will have a pending transaction. If you do not see either 
+                        of these, your order most likely did not go through in our system. Alternatively, you can check the status of your order online by signing in to MY ACCOUNT 
+                        and then clicking "Order History". We encourage you to try to place your order again.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt2"><span>I referred my friend to L’OCCITANE. How can I redeem my promotional code?</span></h4>
+                <div class="moredata2">
+                    <p>We are glad to hear that you want to share the world of L'OCCITANE with your friend! In order for you to receive your promotional code, your friend must be 
+                        a first time registered customer placing an order of $70+. You will receive a promotional code afterwards. Please make sure that you are logged into your 
+                        account at the time of checkout or your promo code will not work.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt3"><span>How can I redeem my L'OCCITANE gift card?</span></h4>
+                <div class="moredata3">
+                    <p>You may redeem your gift card at the Payment portion of checkout. At checkout you will be asked for your gift card’s PIN number. If you are still unable to 
+                        redeem your gift card, please call our Customer Care Team at 1-888-623-2880.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt4"><span>What payment methods do you accept?</span></h4>
+                <div class="moredata4">
+                    <p>Our website accepts payment from all major cards (Visa, MasterCard, American Express, Discover), Apple Pay, PayPal, Amazon Pay, JCB, UnionPay, Klarna 
+                        and Diners Club International. If placing an order by phone, we can only accept major credit/debit cards. We cannot use Apple PayPal, Klarna or Amazon Pay 
+                        via phone. We cannot place orders through email. For your security, please do not email us your credit card information.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt5"><span>I entered the wrong address at checkout</span></h4>
+                <div class="moredata5">
+                    <p>Please immediately call our Customer Care team at 1-888-623-2880. <b>Please note that you have one business hour to change your order. We are unable to 
+                        make any order changes after this time frame has passed. We are not responsible for packages going to an incorrect address.</b>
+                    </p>
+                    <strong>You may cancel your order via your account (within one business hour). Here are the steps:</strong>
+                    <ol>
+                        <li>1. Click on your account in the top right corner. If you are logged in, this will display as your name. If you are not logged in, this will display as "Register / Edit 
+                            Account" and prompt you to log in to your account</li>
+                        <li>2. Click on "My Order History" under the My Orders Tab</li>
+                        <li>3. Click the "Cancel My Order" button on the right of your order</li>
+                        <li>4. Confirm that you wish to cancel by clicking "Yes, Cancel"</li>
+                    </ol>
+                    <strong>If you’re unable to cancel your order, you can:</strong>
+                    <ul>
+                        <li>- Contact the carrier once it ships and ask if your order can be returned to us (there is no guarantee that it can be rerouted)</li>
+                        <li>- Refuse the package at the time of delivery to have your order returned to us and we’ll process a refund within 5-7 business days from the date that your 
+                            order is  received at our warehouse</li>
+                        <li>- Return your purchase by mail or in store </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt6"><span>Do you accept international credit/debit cards?</span></h4>
+                <div class="moredata6">
+                    <p>To place an order with your international credit/debit card, please place your order by phone at 1-888-623-2880.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt7"><span>Can I ship my order to another country?</span></h4>
+                <div class="moredata7">
+                    <p>We are unable to send any parcels outside the US and its territories. To place an order for delivery to another country, we invite you visit our international 
+                        website where you will find a full list of the countries L'OCCITANE is available. Please place an order on corresponding country’s website.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt8"><span>Do you provide gift receipts?</span></h4>
+                <div class="moredata8">
+                    <p>Don't worry, the packing slip included in your shipment does not show the prices of our products</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt9"><span>How can I change my address after I placed my order with Apple Pay, Amazon Pay, or PayPal?</span></h4>
+                <div class="moredata9">
+                    <p>You can make any changes needed up to one hour after your order is placed by calling our Customer Care Team at 1-888-623-2880. Additionally, we 
+                        recommend entering the billing and shipping address to the express payment method (Apple Pay, Amazon, PayPal) prior to placing your order for a smooth, 
+                        seamless shopping experience.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt10"><span>Can my order be gift wrapped?</span></h4>
+                <div class="moredata10">
+                    <p>Our gift-wrapping program is currently on pause. We do offer a gift-wrapping kit option at checkout for an additional $5. The purpose of this kit is to 
+                        assemble a gift yourself and give it to the recipient. Please be advised that if you are sending the order directly to the recipient and you select this option, 
+                        they will receive an unfolded, flat box with tissue paper.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt11"><span>Why is my promotional code not applying to my order?</span></h4>
+                <div class="moredata11">
+                    <strong>We are sorry that you are having trouble redeeming a promotional code. This could be for a number of reasons:</strong>
+                    <ol>
+                        <li>1. Your order total does not meet the threshold for the promotion to be applicable.</li>
+                        <li>2. The promotion has expired. Promotional codes are valid for 30 days from the issue date.</li>
+                        <li>3. The promotion has already been redeemed. Promotions can only be used one time only.</li>
+                        <li>4. A promotional code has already been applied to the order. Promotional offers are not combinable, with the exception of a discounted product with your
+                            purchase.</li>
+                        <li>5. Ensure the product is in your basket before you apply your promotional code.</li>
+                        <li>6. The gift with purchase associated with the promotional code is now out of stock, as these are redeemable while supplies last.</li>
+                    </ol>
+                    <p>You can find the terms and conditions of a promotion listed on the email or flyer containing your promo code and on our web site.</p>
+                    <p>If your code meets all the terms and conditions and you are still unable to apply it to your order, it may be due to a technical glitch or bug. Please contact our 
+                        customer care team at 1-888-623-2880 or send us an email at <a href="mailto:contact.en-us@loccitane.com"> contact.en-us@loccitane.com</a> if this is the case so that we can assist you.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt12"><span>Why was my order delayed or cancelled?</span></h4>
+                <div class="moredata12">
+                    <strong>All orders placed on our website are processed through our automatic verification system. During this step, we will attempt to verify all information 
+                        provided in your order including, but not limited to shipping, billing, contact, and payment information. Your order may be delayed or cancelled if:</strong>
+                    <ul>
+                        <li>- You are shipping your order to an address other than your billing address.</li>
+                        <li>- The address and contact information provided does not match the information your bank has on file.</li>
+                        <li>- Your order does not meet our Terms and Conditions</li>
+                        <li>- The item/items in your order are now out of stock.</li>
+                    </ul>
+                    <p>If any of these conditions apply to your order, your order may be cancelled. You can reach our Customer Care Team at 1-866-623-2880 for more information.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt13"><span>Holiday Order Deadline</span></h4>
+                <div class="moredata13">
+                    <p>Please ensure all orders placed with standard shipping are submitted by Monday December 5th, 2022 to ensure delivery before Christmas. If orders are 
+                        placed after December 5th 2022, it is recommended to use our expedited shipping options. </p>
+                </div>
+            </div>
+            <div>
+                <h4 class="morebt14"><span>I forgot to add my promotional code to my order. What can I do?</span></h4>
+                <div class="moredata14">
+                    <p>If you would like to apply a promotional code to an order after it has been placed, please give our customer service team a call as soon as possible at 
+                        1-888-623-2880.</p>
+                    <b class="myorder">Order changes can only be made within one business hour of order placement. </b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <strong>Safe &amp; Secure Payment</strong>
+                    <p>Our online payment system is operated 
+                        by a service provider specializing in secure 
+                        online payments.<span>For further information 
+                            please refer to the "payment" section of 
+                            our Terms and Conditions.</span></p>
+                </li>
+                <li>
+                    <strong>SHIPPING</strong>
+                    <p>Free standard shipping on all orders of $49+ 3 - 10 
+                        business days from receipt of your order. 
+                        <span>For an additional charge per address, 
+                            we can expedite delivery by FedEx to most 
+                            destinations in 2 - 3 business days.</span></p>
+                </li>
+                <li>
+                    <strong>CUSTOMER SERVICE</strong>
+                    <p>Need Help? Please call:  1-888-623-2880
+                        Monday - Friday 9AM - 11PM EST
+                        Saturday 10AM - 11PM EST</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <img src="images/logo_10.png" alt="welcome_to_loccitane">
+            </div>
+            <div>
+                <h2 class="morebt1">ABOUT US</h2>
+                <ul class="moredata1">
+                    <li><a href="footer_Cultivators_of_Change.html">Cultivators of Change</a></li>
+                    <li><a href="footer_LOccitane_Values.html">L'Occitane Values</a></li>
+                    <li><a href="footer_Sustainable_Beauty.html">Sustainable Beauty</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">L'OCCITANE Group</a></li>
+                    <li><a href="footer_Formulation_Charter.html">Formulation Charter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt2">AT YOUR SERVICE</h2>
+                <ul class="moredata2">
+                    <li><a href="https://www.google.com" class="application">1-888-623-2880</a></li>
+                    <li><a href="helpMainpage.html">Help and Contact</a></li>
+                    <li><a href="signIn.html">Order Tracking</a></li>
+                    <li><a href="footer_ReturnExchanges.html">Return &amp; Exchanges</a></li>
+                    <li><a href="helpMainpage.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="morebt3">SOCIAL MEDIA</h2>
+                <ul class="moredata3">
+                    <li><a href="https://www.facebook.com/loccitaneusa" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/loccitane/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/loccitaneusa" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Cd7XUlv4NPE" target="_blank">Youtube</a></li>
+                </ul>
+                <ul>
+                    <li><a href="footer_Do_Not_Sell_MyInfoRequest–California_Residents.html#donotsell">Do Not Sell My Info Request – 
+                        California Residents</a></li>
+                    <li><a href="footer_SupplyChain_Transparency.html">Supply Chain Transparency</a></li>
+                    <li><a href="footer_TermsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://group.loccitane.com/" target="_blank">Investors</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 L’OCCITANE INTERNATIONAL SA. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>
