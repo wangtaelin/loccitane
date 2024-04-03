@@ -969,7 +969,7 @@
         padding-top: 105px;
     }
     .footerformulationCharter > div:first-of-type{
-        background: url('../images/Formulation-Charter1.png')left top / cover no-repeat ;
+        background: url('../images/formulation-charter1.png')left top / cover no-repeat ;
     }
     .footerformulationCharter > div:first-of-type > h2{
         padding: 70px 0; text-align: center; text-transform: uppercase;
