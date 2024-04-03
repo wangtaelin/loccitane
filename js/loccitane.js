@@ -1,11 +1,10 @@
 $(document).ready(function(){
     cartControl();
     emptyMessage();
-    justToggle();
     detailSlider(".bxslider");
     thumbnailactive();
     cartRemove();
-    toggleTab(".detailcontainer div ul li input[type='button']");
+    toggleTab(".detailcontainer div:nth-of-type(2) > ul > li input[type='button']");
     payment();
     panelControl(".openButton");
     moreproduct();
@@ -13,7 +12,6 @@ $(document).ready(function(){
     helpIf();
     account();
     quantitybutton();
-    justToggle("#hiddenContent2 input[type='button']");
     $('.application').on('click', function() {
 
         if ( this.host !== window.location.host ) {
@@ -90,26 +88,17 @@ function toggleTab(target){
     //     $('#hiddenContent3').show();
     //   });
 }
+function thumbnailactive() {
+// 페이지 로드 시 첫 번째 li에 초기 테두리 추가
+$(".thumbNailPager li:first-child").addClass("active");
 
- function justToggle(target){
-    $(target).click(function(){
-        $(this).toggleClass("active");
-    });
-}
-
-
-
-  function thumbnailactive() {
-    // 페이지 로드 시 첫 번째 li에 초기 테두리 추가
-    $(".thumbNailPager li:first-child").addClass("active");
-
-    // 각 li 요소에 클릭 이벤트 추가
-    $(".thumbNailPager li").click(function () {
-        // 모든 li에서 active 클래스 제거
-        $(".thumbNailPager li").removeClass("active");
-        // 클릭된 li에 active 클래스 추가
-        $(this).addClass("active");
-    });
+// 각 li 요소에 클릭 이벤트 추가
+$(".thumbNailPager li").click(function () {
+    // 모든 li에서 active 클래스 제거
+    $(".thumbNailPager li").removeClass("active");
+    // 클릭된 li에 active 클래스 추가
+    $(this).addClass("active");
+});
 }
 
 function cartRemove(){
@@ -168,10 +157,10 @@ function payment(){
         $(".cartpanelEmpty").css("display", "block");
     });
 
-    $(".justToggle").click(function(){
-        $("#ingredientList").css("display", "block");
-        $("#ingredientList").css("display", "none");
-    });
+    // $(".justToggle").click(function(){
+    //     $("#ingredientList").css("display", "block");
+    //     $("#ingredientList").css("display", "none");
+    // });
 
     $(".menuopenbt").click(function(){
         $(".menupanel").css("display", "block");
@@ -226,7 +215,6 @@ function account(){
     });
     $('.justToggle').click(function() {
         $('#ingredientList').toggleClass('close');
-        // 클릭된 요소의 다음 형제인 "accountpn" 클래스를 가진 요소의 display 속성을 토글합니다.
         $('#ingredientList').toggle();
     });
 };
