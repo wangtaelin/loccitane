@@ -7697,11 +7697,11 @@
         moz-appearance: none; */
     }
     .payment > .pay > div:first-of-type > ul > li > input[type="radio"]{
-        background-image:url('../images/radio_button_unchecked3.png');
+        background-image:url('../images/radio_button_unchecked.png');
         width: 20px;
         height: 20px;
     }
-    .payment > .pay > div:first-of-type > ul > li > input[type="radio"].click{
+    .payment > .pay > div:first-of-type > ul > li > input[type="radio"].active{
         background-image: url('../images/radio_button_checked.png');
     }
     .payment > .pay > div:first-of-type > div{
