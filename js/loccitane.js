@@ -12,6 +12,7 @@ $(document).ready(function(){
     helpIf();
     account();
     quantitybutton();
+    justToggle("#hiddenContent2 input[type='button']");
     $('.application').on('click', function() {
 
         if ( this.host !== window.location.host ) {
@@ -88,6 +89,12 @@ function toggleTab(target){
     //     $('#hiddenContent3').show();
     //   });
 }
+function justToggle(target){
+    $(target).click(function(){
+        $(this).toggleClass("active");
+    });
+}
+
 function thumbnailactive() {
 // 페이지 로드 시 첫 번째 li에 초기 테두리 추가
 $(".thumbNailPager li:first-child").addClass("active");
