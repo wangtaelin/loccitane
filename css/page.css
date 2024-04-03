@@ -691,6 +691,7 @@
         margin-left: 5.5%;
     } */
     .detailcontainer > div:nth-of-type(2) > ul > li > input{
+        cursor: pointer;
         color: #000000;
         background: none;
         border: none;
@@ -3647,6 +3648,7 @@
         margin-left: 5.5%;
     }
     .detailcontainer > div:nth-of-type(2) > ul > li > input{
+        cursor: pointer;
         background: none;
         border: none;
         font-size: 22px; text-transform: uppercase;
@@ -6498,6 +6500,7 @@
         margin-left: 8.7%;
     }
     .detailcontainer > div:nth-of-type(2) > ul > li > input{
+        cursor: pointer;
         background: none;
         border: none;
         font-size: 24px; text-transform: uppercase;
