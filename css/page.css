@@ -7691,6 +7691,8 @@
         box-shadow: none; 
         appearance: none; 
         font-family: inherit; 
+        padding: 0;
+        margin: 0;
         /* webkit-appearance: none; 
         moz-appearance: none; */
     }
@@ -7698,6 +7700,9 @@
         background-image:url('../images/radio_button_unchecked3.png');
         width: 20px;
         height: 20px;
+    }
+    .payment > .pay > div:first-of-type > ul > li > input[type="radio"].click{
+        background-image: url('../images/radio_button_checked.png');
     }
     .payment > .pay > div:first-of-type > div{
         display: none;
