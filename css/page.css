@@ -3848,7 +3848,7 @@
     }
     .detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > input.active{
         background-image: url('../images/expand_less.png');
-        /*padding: 5px;*/
+        padding-top: 10px;
     }
     .detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > p{
         font-size: 14px; font-weight: 500; line-height: 20px;
