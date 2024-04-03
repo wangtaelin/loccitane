@@ -908,6 +908,7 @@
         font-size: 12px; font-weight: 500; line-height: 16px;
         color: #616161;
         display: none;
+        padding-left: 1%;
     }
     .detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > input.active+p{
         display: block;
@@ -3853,6 +3854,7 @@
         font-size: 14px; font-weight: 500; line-height: 20px;
         color: #616161;
         display: none;
+        padding-left: 1%;
     }
     .detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > input.active+p{
         display: block;
@@ -6701,6 +6703,7 @@
         font-size: 16px; font-weight: 500; line-height: 22px;
         color: #616161;
         display: none;
+        padding-left: 0.4%;
     }
     /* .detailcontainer > div:nth-of-type(2) > div:nth-of-type(2) > button.active+p{
         display: block;
