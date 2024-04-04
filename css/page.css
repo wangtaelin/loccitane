@@ -2036,14 +2036,28 @@
     .payment > .pay > div:first-of-type > ul > li{
         margin-bottom: 20px;
     }
-    /* .payment > .pay > div:first-of-type > ul > li:first-of-type > input[type="radio"]:checked{
-
-    } */
     .payment > .pay > div:first-of-type > div{
         display: none;
     }
+    .payment > .pay > div:first-of-type > ul > li > input{
+        border: none;
+        box-shadow: none; 
+        appearance: none; 
+        font-family: inherit; 
+        padding: 0;
+        margin: 0;
+    }
+    .payment > .pay > div:first-of-type > ul > li > input[type="radio"]{
+        background-image:url('../images/radio_button_unchecked.png');
+        width: 20px;
+        height: 20px;
+    }
+    .payment > .pay > div:first-of-type > ul > li > input[type="radio"]:checked{
+        background-image: url('../images/radio_button_checked.png');
+    }
     .payment > .pay > div:first-of-type > div > ul > li > label{
-        margin-bottom: 15px; display: block;
+        margin-bottom: 15px; 
+        display: block;
         font-size: 14px;
     }
     .payment > .pay > div:first-of-type > div > ul > li > input{
@@ -4957,11 +4971,24 @@
     .payment > .pay > div:first-of-type > ul > li:last-of-type{
         margin-bottom: 25px;
     }
-    /* .payment > .pay > div:first-of-type > ul > li:first-of-type > input[type="radio"]:checked{
-
-    } */
     .payment > .pay > div:first-of-type > div{
         display: none;
+    }
+    .payment > .pay > div:first-of-type > ul > li > input{
+        border: none;
+        box-shadow: none; 
+        appearance: none; 
+        font-family: inherit; 
+        padding: 0;
+        margin: 0;
+    }
+    .payment > .pay > div:first-of-type > ul > li > input[type="radio"]{
+        background-image:url('../images/radio_button_unchecked.png');
+        width: 20px;
+        height: 20px;
+    }
+    .payment > .pay > div:first-of-type > ul > li > input[type="radio"]:checked{
+        background-image: url('../images/radio_button_checked.png');
     }
     .payment > .pay > div:first-of-type > div > ul > li > label{
         margin-bottom: 15px; display: block;
@@ -7693,15 +7720,13 @@
         font-family: inherit; 
         padding: 0;
         margin: 0;
-        /* webkit-appearance: none; 
-        moz-appearance: none; */
     }
     .payment > .pay > div:first-of-type > ul > li > input[type="radio"]{
         background-image:url('../images/radio_button_unchecked.png');
         width: 20px;
         height: 20px;
     }
-    .payment > .pay > div:first-of-type > ul > li > input[type="radio"].active{
+    .payment > .pay > div:first-of-type > ul > li > input[type="radio"]:checked{
         background-image: url('../images/radio_button_checked.png');
     }
     .payment > .pay > div:first-of-type > div{
